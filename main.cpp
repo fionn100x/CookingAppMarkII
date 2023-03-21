@@ -35,6 +35,10 @@ int main(int argc, char *argv[])
     quit.setFont(font);
     credits.setFont(font);
 
+    get_cookin.setStyleSheet("background-color: pink");
+    quit.setStyleSheet("background-color: red");
+    credits.setStyleSheet("background-color: orange");
+
     //resizing the window to the size of the pixmap
     label.resize(pixmap.size());
 
