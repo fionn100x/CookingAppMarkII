@@ -3,6 +3,8 @@
 #include <QApplication>
 #include <QLabel>
 #include <QPixmap>
+#include <QPushButton>
+#include <QFont>
 
 
 int main(int argc, char *argv[])
@@ -16,6 +18,22 @@ int main(int argc, char *argv[])
     //creating a label and displaying the pixmap in the window using the setPixmap() function
     QLabel label;
     label.setPixmap(pixmap);
+
+    QPushButton get_cookin("Get Cookin'!", &label);
+    get_cookin.setGeometry(20, 250, 150, 50);
+
+    QPushButton quit("Quit", &label);
+    quit.setGeometry(20, 310, 150, 50);
+    QObject::connect(&quit, &QPushButton::clicked, &QApplication::quit);
+
+    QPushButton credits("Credits", &label);
+    credits.setGeometry(20, 370, 150, 50);
+
+    QFont font("Tahoma", 16, QFont::Bold);
+
+    get_cookin.setFont(font);
+    quit.setFont(font);
+    credits.setFont(font);
 
     //resizing the window to the size of the pixmap
     label.resize(pixmap.size());
