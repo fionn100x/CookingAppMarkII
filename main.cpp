@@ -23,6 +23,15 @@ int main(int argc, char *argv[])
     //the function that displays the label on the screen
     label.show();
 
+    //changing the title of the main window
+    label.window()->setWindowTitle("Recipe Rendezvous");
+
+    QMainWindow favicon;
+    favicon.setCentralWidget(&label);
+    favicon.setWindowIcon(QIcon("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\favicon.jpg"));
+    favicon.setWindowTitle("Recipe Rendezvous");
+    favicon.show();
+
 
     return a.exec();
 }
