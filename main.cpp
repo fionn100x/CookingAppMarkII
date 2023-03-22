@@ -20,24 +20,29 @@ int main(int argc, char *argv[])
     label.setPixmap(pixmap);
 
     QPushButton get_cookin("Get Cookin'!", &label);
-    get_cookin.setGeometry(20, 250, 150, 50);
+        get_cookin.setGeometry(20, 250, 150, 50);
 
-    QPushButton quit("Quit", &label);
-    quit.setGeometry(20, 310, 150, 50);
-    QObject::connect(&quit, &QPushButton::clicked, &QApplication::quit);
+        QPushButton quit("Quit", &label);
+        quit.setGeometry(20, 310, 150, 50);
+        QObject::connect(&quit, &QPushButton::clicked, &QApplication::quit);
 
-    QPushButton credits("Credits", &label);
-    credits.setGeometry(20, 370, 150, 50);
+        QPushButton credits("Credits", &label);
+        credits.setGeometry(20, 370, 150, 50);
 
-    QFont font("Tahoma", 16, QFont::Bold);
+        QPushButton settings("Settings", &label);
+        settings.setGeometry(20, 430, 150, 50);
 
-    get_cookin.setFont(font);
-    quit.setFont(font);
-    credits.setFont(font);
+        QFont font("Tahoma", 16, QFont::Bold);
 
-    get_cookin.setStyleSheet("background-color: pink");
-    quit.setStyleSheet("background-color: red");
-    credits.setStyleSheet("background-color: orange");
+        get_cookin.setFont(font);
+        quit.setFont(font);
+        credits.setFont(font);
+        settings.setFont(font);
+
+        get_cookin.setStyleSheet("background-color: pink");
+        quit.setStyleSheet("background-color: red");
+        credits.setStyleSheet("background-color: orange");
+        settings.setStyleSheet("background-color: yellow");
 
     //resizing the window to the size of the pixmap
     label.resize(pixmap.size());
