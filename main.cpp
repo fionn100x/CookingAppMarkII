@@ -5,6 +5,7 @@
 #include <QPixmap>
 #include <QPushButton>
 #include <QFont>
+#include <QVBoxLayout>
 
 
 int main(int argc, char *argv[])
@@ -38,7 +39,7 @@ int main(int argc, char *argv[])
     QPushButton credits("Credits", &label);
     credits.setGeometry(20, 370, 150, 50);
     QPushButton backButton("Go Back!", &credits_label);
-    backButton.setGeometry(360, 20, 120, 40);
+    backButton.setGeometry(360, 440, 120, 40);
     backButton.setStyleSheet("background-color: lightblue");
     backButton.hide();
 
@@ -80,14 +81,19 @@ int main(int argc, char *argv[])
         credits.hide();
         settings.hide();
 
-        QLabel textLabel(&credits_label);
-        textLabel.setGeometry(20, 20, 100, 100);
-        textLabel.setWordWrap(true);
-        textLabel.setAlignment(Qt::AlignTop | Qt::AlignLeft);
-        textLabel.setText("Hi.");
+        QVBoxLayout* layout = new QVBoxLayout(&credits_label);
+        QLabel* textLabel = new QLabel("Introducing Recipe Rendezvous, the ultimate cooking recipe app designed by <font color='red'>Fionn O'Gorman</font> (Student ID: 21329354). With Recipe Rendezvous, discover new and exciting recipes right from your front home screen! We are excited to help people learn new recipes and unlock their full culinary potential.", &credits_label);
+        textLabel->setWordWrap(true);
+        textLabel->setAlignment(Qt::AlignTop | Qt::AlignLeft);
+        layout->addWidget(textLabel);
+        QFont font("Tahoma", 12.5);
+        textLabel->setFont(font);
 
-        textLabel.show();
+        textLabel->show();
+
+
         backButton.show();
+        backButton.raise();
 
         QObject::connect(&backButton, &QPushButton::clicked, [&label, &credits_label, &get_cookin, &quit, &credits, &settings, &backButton]() {
             credits_label.hide();
