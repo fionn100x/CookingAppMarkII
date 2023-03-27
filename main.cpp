@@ -37,9 +37,10 @@ int main(int argc, char *argv[])
 
     QPushButton credits("Credits", &label);
     credits.setGeometry(20, 370, 150, 50);
-    QObject::connect(&credits, &QPushButton::clicked, [&credits_label]() {
-        credits_label.show();
-    });
+    QPushButton backButton("Go Back!", &credits_label);
+    backButton.setGeometry(360, 20, 120, 40);
+    backButton.setStyleSheet("background-color: lightblue");
+    backButton.hide();
 
     QPushButton settings("Settings", &label);
     settings.setGeometry(20, 430, 150, 50);
@@ -50,6 +51,7 @@ int main(int argc, char *argv[])
     quit.setFont(font);
     credits.setFont(font);
     settings.setFont(font);
+    backButton.setFont(font);
 
     get_cookin.setStyleSheet("background-color: pink");
     quit.setStyleSheet("background-color: red");
@@ -70,6 +72,33 @@ int main(int argc, char *argv[])
     favicon.setWindowIcon(QIcon("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\favicon.jpg"));
     favicon.setWindowTitle("Recipe Rendezvous");
     favicon.show();
+
+    QObject::connect(&credits, &QPushButton::clicked, [&credits_label, &get_cookin, &quit, &credits, &settings, &label, &backButton]() {
+        credits_label.show();
+        get_cookin.hide();
+        quit.hide();
+        credits.hide();
+        settings.hide();
+
+        QLabel textLabel(&credits_label);
+        textLabel.setGeometry(20, 20, 100, 100);
+        textLabel.setWordWrap(true);
+        textLabel.setAlignment(Qt::AlignTop | Qt::AlignLeft);
+        textLabel.setText("Hi.");
+
+        textLabel.show();
+        backButton.show();
+
+        QObject::connect(&backButton, &QPushButton::clicked, [&label, &credits_label, &get_cookin, &quit, &credits, &settings, &backButton]() {
+            credits_label.hide();
+            label.show();
+            get_cookin.show();
+            quit.show();
+            credits.show();
+            settings.show();
+            backButton.hide();
+        });
+    });
 
 
     return a.exec();
