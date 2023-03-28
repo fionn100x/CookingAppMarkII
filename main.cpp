@@ -20,6 +20,15 @@ int main(int argc, char *argv[])
     QLabel label;
     label.setPixmap(pixmap);
 
+    QLabel get_cookin_label(&label);
+    get_cookin_label.setGeometry(0, 0, pixmap.width(), pixmap.height());
+    get_cookin_label.setScaledContents(true);
+
+    QPixmap get_cookin_image("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\get_cookin.png");
+    get_cookin_label.setPixmap(get_cookin_image);
+
+    get_cookin_label.hide();
+
     QLabel credits_label(&label);
     credits_label.setGeometry(0, 0, pixmap.width(), pixmap.height());
     credits_label.setScaledContents(true);
@@ -31,6 +40,10 @@ int main(int argc, char *argv[])
 
     QPushButton get_cookin("Get Cookin'!", &label);
     get_cookin.setGeometry(20, 250, 150, 50);
+    QPushButton gcBackButton("Go Back!", &get_cookin_label);
+    gcBackButton.setGeometry(360, 440, 120, 40);
+    gcBackButton.setStyleSheet("background-color: lightblue");
+    gcBackButton.hide();
 
     QPushButton quit("Quit", &label);
     quit.setGeometry(20, 310, 150, 50);
@@ -38,10 +51,10 @@ int main(int argc, char *argv[])
 
     QPushButton credits("Credits", &label);
     credits.setGeometry(20, 370, 150, 50);
-    QPushButton backButton("Go Back!", &credits_label);
-    backButton.setGeometry(360, 440, 120, 40);
-    backButton.setStyleSheet("background-color: lightblue");
-    backButton.hide();
+    QPushButton cBackButton("Go Back!", &credits_label);
+    cBackButton.setGeometry(360, 440, 120, 40);
+    cBackButton.setStyleSheet("background-color: lightblue");
+    cBackButton.hide();
 
     QPushButton settings("Settings", &label);
     settings.setGeometry(20, 430, 150, 50);
@@ -52,7 +65,8 @@ int main(int argc, char *argv[])
     quit.setFont(font);
     credits.setFont(font);
     settings.setFont(font);
-    backButton.setFont(font);
+    cBackButton.setFont(font);
+    gcBackButton.setFont(font);
 
     get_cookin.setStyleSheet("background-color: pink");
     quit.setStyleSheet("background-color: red");
@@ -74,7 +88,30 @@ int main(int argc, char *argv[])
     favicon.setWindowTitle("Recipe Rendezvous");
     favicon.show();
 
-    QObject::connect(&credits, &QPushButton::clicked, [&credits_label, &get_cookin, &quit, &credits, &settings, &label, &backButton]() {
+    QObject::connect(&get_cookin, &QPushButton::clicked, [&get_cookin_label, &get_cookin, &quit, &credits, &settings, &label, &gcBackButton]() {
+        gcBackButton.hide();
+        get_cookin_label.show();
+        get_cookin.hide();
+        quit.hide();
+        credits.hide();
+        settings.hide();
+
+        gcBackButton.show();
+        gcBackButton.raise();
+
+        QObject::connect(&gcBackButton, &QPushButton::clicked, [&label, &get_cookin_label, &get_cookin, &quit, &credits, &settings, &gcBackButton]() {
+            get_cookin_label.hide();
+            label.show();
+            get_cookin.show();
+            quit.show();
+            credits.show();
+            settings.show();
+            gcBackButton.hide();
+        });
+    });
+
+
+    QObject::connect(&credits, &QPushButton::clicked, [&credits_label, &get_cookin, &quit, &credits, &settings, &label, &cBackButton]() {
         credits_label.show();
         get_cookin.hide();
         quit.hide();
@@ -92,17 +129,17 @@ int main(int argc, char *argv[])
         textLabel->show();
 
 
-        backButton.show();
-        backButton.raise();
+        cBackButton.show();
+        cBackButton.raise();
 
-        QObject::connect(&backButton, &QPushButton::clicked, [&label, &credits_label, &get_cookin, &quit, &credits, &settings, &backButton]() {
+        QObject::connect(&cBackButton, &QPushButton::clicked, [&label, &credits_label, &get_cookin, &quit, &credits, &settings, &cBackButton]() {
             credits_label.hide();
             label.show();
             get_cookin.show();
             quit.show();
             credits.show();
             settings.show();
-            backButton.hide();
+            cBackButton.hide();
         });
     });
 
