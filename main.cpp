@@ -8,6 +8,7 @@
 #include <QVBoxLayout>
 #include <QMenu>
 #include <QPoint>
+#include <QObject>
 
 int main(int argc, char *argv[])
 {
@@ -15,7 +16,7 @@ int main(int argc, char *argv[])
     MainWindow w;
 
     //creating a pixmap and adding my image as a parameter
-    QPixmap pixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\recipe_rendezvous.png");
+    QPixmap pixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\recipe_rendezvous.png");
 
     //creating a label and displaying the pixmap in the window using the setPixmap() function
     QLabel label;
@@ -25,7 +26,7 @@ int main(int argc, char *argv[])
     get_cookin_label.setGeometry(0, 0, pixmap.width(), pixmap.height());
     get_cookin_label.setScaledContents(true);
 
-    QPixmap get_cookin_image("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\get_cookin_new.png");
+    QPixmap get_cookin_image("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\get_cookin_new.png");
     get_cookin_label.setPixmap(get_cookin_image);
 
     get_cookin_label.hide();
@@ -34,13 +35,14 @@ int main(int argc, char *argv[])
     credits_label.setGeometry(0, 0, pixmap.width(), pixmap.height());
     credits_label.setScaledContents(true);
 
-    QPixmap credits_image("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\credits.gif");
+    QPixmap credits_image("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\credits.gif");
     credits_label.setPixmap(credits_image);
 
     credits_label.hide();
 
     QPushButton get_cookin("Get Cookin'!", &label);
     get_cookin.setGeometry(20, 250, 150, 50);
+
     QPushButton gcBackButton("Go Back!", &get_cookin_label);
     gcBackButton.setGeometry(360, 440, 120, 40);
     gcBackButton.setStyleSheet("background-color: lightblue");
@@ -60,8 +62,23 @@ int main(int argc, char *argv[])
     QPushButton settings("Settings", &label);
     settings.setGeometry(20, 430, 150, 50);
 
+    QLabel breakfastDishesLabel(&get_cookin_label);
+    QPixmap breakfastDishesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
+    breakfastDishesLabel.setPixmap(breakfastDishesPixmap);
+    breakfastDishesLabel.hide();
+
+    QPushButton bdBackButton("Go Back!", &breakfastDishesLabel);
+    bdBackButton.setGeometry(360, 440, 120, 40);
+    bdBackButton.setStyleSheet("background-color: lightblue");
+    bdBackButton.hide();
+
     QMenu categories("Cooking Categories", &get_cookin);
     QAction *breakfastDishes = categories.addAction("Breakfast Dishes");
+    QObject::connect(breakfastDishes, &QAction::triggered, [&](){
+        breakfastDishesLabel.show();
+        gcBackButton.hide();
+        bdBackButton.show();
+    });
     QAction *appetizersAndSnacks = categories.addAction("Appetizers and Snacks");
     QAction *soupsAndStews = categories.addAction("Soups and Stews");
     QAction *salads = categories.addAction("Salads");
@@ -81,6 +98,14 @@ int main(int argc, char *argv[])
     QMenu seeCategories("Click to see categories", &get_cookin);
     seeCategories.addMenu(&categories);
     seeCategories.setStyleSheet("QMenu { background-color: lime; }");
+
+    QObject::connect(&bdBackButton, &QPushButton::clicked, [&get_cookin_label, &breakfastDishesLabel, &gcBackButton, &bdBackButton, &seeCategories]() {
+        breakfastDishesLabel.hide();
+        get_cookin_label.show();
+        gcBackButton.show();
+        bdBackButton.hide();
+        seeCategories.show();
+    });
 
     QFont font("Tahoma", 16, QFont::Bold);
 
@@ -167,6 +192,8 @@ int main(int argc, char *argv[])
             cBackButton.hide();
         });
     });
+
+
 
 
     return a.exec();
