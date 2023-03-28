@@ -6,7 +6,8 @@
 #include <QPushButton>
 #include <QFont>
 #include <QVBoxLayout>
-
+#include <QMenu>
+#include <QPoint>
 
 int main(int argc, char *argv[])
 {
@@ -24,7 +25,7 @@ int main(int argc, char *argv[])
     get_cookin_label.setGeometry(0, 0, pixmap.width(), pixmap.height());
     get_cookin_label.setScaledContents(true);
 
-    QPixmap get_cookin_image("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\get_cookin.png");
+    QPixmap get_cookin_image("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\get_cookin_new.png");
     get_cookin_label.setPixmap(get_cookin_image);
 
     get_cookin_label.hide();
@@ -59,6 +60,28 @@ int main(int argc, char *argv[])
     QPushButton settings("Settings", &label);
     settings.setGeometry(20, 430, 150, 50);
 
+    QMenu categories("Cooking Categories", &get_cookin);
+    QAction *breakfastDishes = categories.addAction("Breakfast Dishes");
+    QAction *appetizersAndSnacks = categories.addAction("Appetizers and Snacks");
+    QAction *soupsAndStews = categories.addAction("Soups and Stews");
+    QAction *salads = categories.addAction("Salads");
+    QAction *vegetarianAndVeganMeals = categories.addAction("Vegetarian and Vegan Meals");
+    QAction *seafoodDishes = categories.addAction("Seafood Dishes");
+    QAction *poultryDishes = categories.addAction("Poultry Dishes");
+    QAction *meatDishes = categories.addAction("Meat Dishes");
+    QAction *pastaDishes = categories.addAction("Pasta Dishes");
+    QAction *riceDishes = categories.addAction("Rice Dishes");
+    QAction *sideDishesAndVegetables = categories.addAction("Side Dishes and Vegetables");
+    QAction *saucesDressingsAndMarinades = categories.addAction("Sauces, Dressings and Marinades");
+    QAction *bakedGoodsAndDesserts = categories.addAction("Baked Goods and Desserts");
+    QAction *beveragesAndCocktails = categories.addAction("Beverages And Cocktails");
+    QAction *specialDietaryNeeds = categories.addAction("Special Dietary Needs (gluten-free, dairy-free, low-carb, etc)");
+    categories.setStyleSheet("QMenu { background-color: lime; }");
+
+    QMenu seeCategories("Click to see categories", &get_cookin);
+    seeCategories.addMenu(&categories);
+    seeCategories.setStyleSheet("QMenu { background-color: lime; }");
+
     QFont font("Tahoma", 16, QFont::Bold);
 
     get_cookin.setFont(font);
@@ -88,7 +111,7 @@ int main(int argc, char *argv[])
     favicon.setWindowTitle("Recipe Rendezvous");
     favicon.show();
 
-    QObject::connect(&get_cookin, &QPushButton::clicked, [&get_cookin_label, &get_cookin, &quit, &credits, &settings, &label, &gcBackButton]() {
+    QObject::connect(&get_cookin, &QPushButton::clicked, [&get_cookin_label, &get_cookin, &quit, &credits, &settings, &label, &gcBackButton, &seeCategories]() {
         gcBackButton.hide();
         get_cookin_label.show();
         get_cookin.hide();
@@ -98,6 +121,8 @@ int main(int argc, char *argv[])
 
         gcBackButton.show();
         gcBackButton.raise();
+
+        seeCategories.exec(get_cookin.mapToGlobal(QPoint(-20, -150)));
 
         QObject::connect(&gcBackButton, &QPushButton::clicked, [&label, &get_cookin_label, &get_cookin, &quit, &credits, &settings, &gcBackButton]() {
             get_cookin_label.hide();
