@@ -8,6 +8,7 @@
 #include <QVBoxLayout>
 #include <QMenu>
 #include <QPoint>
+#include <QPainter>
 #include <QObject>
 
 int main(int argc, char *argv[])
@@ -63,7 +64,7 @@ int main(int argc, char *argv[])
     settings.setGeometry(20, 430, 150, 50);
 
     QLabel breakfastDishesLabel(&get_cookin_label);
-    QPixmap breakfastDishesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
+    QPixmap breakfastDishesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishesww.png");
     breakfastDishesLabel.setPixmap(breakfastDishesPixmap);
     breakfastDishesLabel.hide();
 
@@ -72,12 +73,33 @@ int main(int argc, char *argv[])
     bdBackButton.setStyleSheet("background-color: lightblue");
     bdBackButton.hide();
 
+    QLabel pancakesLabel(&get_cookin_label);
+    QPixmap pancakesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
+    pancakesLabel.setPixmap(pancakesPixmap);
+    QPainter pancakesPainter(&pancakesPixmap);
+    QFont recipeFont("Arial", 20);
+    pancakesPainter.setFont(recipeFont);
+    pancakesPainter.drawText(QPointF(190, 30), "Pancakes!");
+    pancakesLabel.setPixmap(pancakesPixmap);
+    pancakesLabel.hide();
+
+    QPushButton pancakesBackButton("Go Back!", &pancakesLabel);
+    pancakesBackButton.setGeometry(360, 440, 120, 40);
+    pancakesBackButton.setStyleSheet("background-color: lightblue");
+    pancakesBackButton.hide();
+
+    QMenu breakfastDishesCategories("Breakfast Dishes Categories", &get_cookin);
+    QAction *pancakesRecipe = breakfastDishesCategories.addAction("Pancakes");
+    QMenu seeBreakfastDishesCategories("Click to see breakfast categories", &get_cookin);
+    seeBreakfastDishesCategories.addMenu(&breakfastDishesCategories);
+
     QMenu categories("Cooking Categories", &get_cookin);
     QAction *breakfastDishes = categories.addAction("Breakfast Dishes");
     QObject::connect(breakfastDishes, &QAction::triggered, [&](){
         breakfastDishesLabel.show();
         gcBackButton.hide();
         bdBackButton.show();
+        seeBreakfastDishesCategories.exec(get_cookin.mapToGlobal(QPoint(-20, -150)));
     });
     QAction *appetizersAndSnacks = categories.addAction("Appetizers and Snacks");
     QAction *soupsAndStews = categories.addAction("Soups and Stews");
@@ -99,12 +121,26 @@ int main(int argc, char *argv[])
     seeCategories.addMenu(&categories);
     seeCategories.setStyleSheet("QMenu { background-color: lime; }");
 
+    QObject::connect(pancakesRecipe, &QAction::triggered, [&pancakesLabel, &breakfastDishesLabel, &bdBackButton, &pancakesBackButton](){
+        breakfastDishesLabel.hide();
+        pancakesLabel.show();
+        bdBackButton.hide();
+        pancakesBackButton.show();
+    });
+
     QObject::connect(&bdBackButton, &QPushButton::clicked, [&get_cookin_label, &breakfastDishesLabel, &gcBackButton, &bdBackButton, &seeCategories]() {
         breakfastDishesLabel.hide();
         get_cookin_label.show();
         gcBackButton.show();
         bdBackButton.hide();
         seeCategories.show();
+    });
+    QObject::connect(&pancakesBackButton, &QPushButton::clicked, [&pancakesLabel, &breakfastDishesLabel, &pancakesBackButton, &bdBackButton, &seeBreakfastDishesCategories]() {
+        pancakesLabel.hide();
+        pancakesBackButton.hide();
+        breakfastDishesLabel.show();
+        bdBackButton.show();
+        seeBreakfastDishesCategories.show();
     });
 
     QFont font("Tahoma", 16, QFont::Bold);
