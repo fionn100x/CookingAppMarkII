@@ -112,6 +112,60 @@ int main(int argc, char *argv[])
     avacadoToastLabel.setPixmap(avacadoToastPixmap);
     avacadoToastLabel.hide();
 
+    QLabel breakfastBurritoLabel(&get_cookin_label);
+    QPixmap breakfastBurritoPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
+    QTextEdit *breakfastBurritoTextEdit = new QTextEdit(&get_cookin_label);
+    breakfastBurritoTextEdit->setText("Breakfast Burrito with Scrambled Eggs, Bacon and Cheese!\n\nIngredients\n\n- 4 large egg4 slices of bacon, chopped\n- 1/2 cup shredded cheddar cheese\n- 4 large flour tortillas\n- 1/2 teaspoon salt\n- 1/4 teaspoon black pepper\n- 1 tablespoon olive oil\n\nDirections:\n\n1. In a large skillet over medium heat, cook the chopped bacon until crispy. Remove from the pan and set aside.\n2. In a small bowl, whisk the eggs with salt and black pepper until well beaten.\n3. In the same skillet, heat the olive oil over medium heat. Add the beaten eggs and scramble until they're cooked through, stirring occasionally.\n4. Warm the flour tortillas in the microwave or in a dry skillet.\n5. Divide the scrambled eggs among the tortillas. Sprinkle with the crispy bacon and shredded cheddar cheese.\n6. Roll up the tortillas, tucking in the sides to make a burrito shape.\n7. Serve hot and enjoy!");
+    breakfastBurritoTextEdit->setGeometry(0, 0, 500, 400);
+    breakfastBurritoTextEdit->hide();
+    breakfastBurritoLabel.setPixmap(breakfastBurritoPixmap);
+    breakfastBurritoLabel.hide();
+
+    QLabel shakshukaLabel(&get_cookin_label);
+    QPixmap shakshukaPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
+    QTextEdit *shakshukaTextEdit = new QTextEdit(&get_cookin_label);
+    shakshukaTextEdit->setText("Shakshuka with Crispy Bread!\n\nIngredients\n\n- 1/4 cup olive oil1 large onion, chopped\n- 4 garlic cloves, minced\n- 1 red bell pepper, seeded and chopped\n- 2 cans (14.5 ounces each) diced tomatoes\n- 2 tsp smoked paprika\n- 1 tsp cumin\n- Salt and black pepper to taste\n- 6 large eggs\n- 1/4 cup crumbled feta cheese\n- 2 tbsp chopped fresh parsley\n- Crusty bread for serving\n\nDirections:\n\n1. Preheat oven to 375°F (190°C).\n2. In a large cast iron skillet or oven-safe skillet, heat the olive oil over medium heat.\n3. Add the chopped onions and cook until they are translucent and starting to brown.\n4. Add the minced garlic and chopped red bell pepper, and cook for another 3-5 minutes, until the pepper is soft.\n5. Pour in the diced tomatoes, smoked paprika, cumin, salt, and black pepper, and stir everything together.\n6. Allow the mixture to simmer for about 10 minutes, or until it has thickened slightly.\n7. Create small wells in the tomato mixture with a spoon and crack the eggs into them.\n8. Sprinkle crumbled feta cheese over the eggs.\n9. Transfer the skillet to the oven and bake until the egg whites are set but the yolks are still runny, about 10-15 minute.\n10. Remove the skillet from the oven and sprinkle chopped parsley over the top.\n11. Serve immediately with crusty bread for dipping and scooping up the shakshuka.");
+    shakshukaTextEdit->setGeometry(0, 0, 500, 400);
+    shakshukaTextEdit->hide();
+    shakshukaLabel.setPixmap(shakshukaPixmap);
+    shakshukaLabel.hide();
+
+    QLabel huevosRancherosLabel(&get_cookin_label);
+    QPixmap huevosRancherosPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
+    QTextEdit *huevosRancherosTextEdit = new QTextEdit(&get_cookin_label);
+    huevosRancherosTextEdit->setText("Huevos Rancheros with Salsa and Guacamole!\n\nIngredients:\n\nFor the salsa:\n\n- 3 medium tomatoes\n- 1/2 red onion\n- 1 jalapeño pepper\n- 2 cloves garlic\n- 1/4 cup fresh cilantro\n- Juice of 1 lime\n- Salt and pepper to taste\n\nFor the guacamole:\n\n- 2 ripe avocados\n- 1/4 red onion, diced\n- 1 small tomato, diced\n- 1/4 cup fresh cilantro\n- Juice of 1 lime\n- Salt and pepper to taste\n\nFor the huevos rancheros:\n\n- 4 corn tortillas\n- 4 large eggs\n- 1/2 cup refried beans\n- 1/4 cup crumbled queso fresco\n- Salt and pepper to taste\n- 1 tablespoon olive oil\n\nDirections:\n\n1. To make the salsa, chop the tomatoes, red onion, jalapeño pepper, garlic, and cilantro and mix together in a bowl. Add lime juice, salt, and pepper to taste. Set aside.\n2. To make the guacamole, mash the avocados in a bowl with a fork. Add the diced red onion, tomato, cilantro, lime juice, salt, and pepper. Mix well and set aside.\n3. Heat the refried beans in a saucepan over low heat until warm.\n4. Heat the tortillas in a dry skillet over medium-high heat until lightly browned and warmed through. Keep the tortillas warm in a clean towel or tortilla warmer.\n5. In the same skillet, heat the olive oil over medium-high heat. Crack the eggs into the skillet and season with salt and pepper. Cook until the whites are set and the yolks are still runny, about 2-3 minutes.\n6. To assemble the huevos rancheros, place a warm tortilla on a plate. Spread a spoonful of refried beans over the tortilla. Top with a fried egg, and spoon salsa and guacamole over the egg. Sprinkle with crumbled queso fresco.\n7. Repeat with the remaining tortillas, eggs, refried beans, salsa, guacamole, and queso fresco.\n8. Serve immediately and enjoy!");
+    huevosRancherosTextEdit->setGeometry(0, 0, 500, 400);
+    huevosRancherosTextEdit->hide();
+    huevosRancherosLabel.setPixmap(huevosRancherosPixmap);
+    huevosRancherosLabel.hide();
+
+    QLabel croissantBreakfastSandwichLabel(&get_cookin_label);
+    QPixmap croissantBreakfastSandwichPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
+    QTextEdit *croissantBreakfastSandwichTextEdit = new QTextEdit(&get_cookin_label);
+    croissantBreakfastSandwichTextEdit->setText("Croissant Breakfast Sandwich with Scrambled Eggs, Bacon and Cheese!\n\nIngredients:\n\n- 2 croissants, sliced in half\n- 4 slices of bacon\n- 4 large eggs\n- 1/4 cup of shredded cheddar cheese\n- Salt and pepper, to taste\n- 1 tablespoon of butter\n\nDirections:\n\n1. Preheat the oven to 350°F (175°C). Line a baking sheet with parchment paper.\n2. In a large skillet over medium heat, cook the bacon until crispy. Remove the bacon from the pan and place it on paper towels to drain.\n3. In the same skillet, melt the butter over medium heat.\n4. Crack the eggs into a bowl and whisk together. Season with salt and pepper, to taste.\n5. Pour the eggs into the skillet and stir constantly until they are scrambled and cooked to your desired doneness.\n6. Sprinkle the shredded cheddar cheese on top of the scrambled eggs and stir until the cheese is melted and the eggs are evenly coated.\n7. Place the croissants on the prepared baking sheet and toast them in the oven for 5-7 minutes, or until they are lightly golden brown.\n8. Assemble the croissant breakfast sandwiches by placing a scoop of the scrambled eggs on the bottom half of each croissant. Top with 2 slices of bacon and the top half of the croissant.\n9. Serve immediately and enjoy your delicious croissant breakfast sandwich!\n\nNote: You can also add other toppings like sliced avocado, tomato, or spinach to your sandwich if you like.");
+    croissantBreakfastSandwichTextEdit->setGeometry(0, 0, 500, 400);
+    croissantBreakfastSandwichTextEdit->hide();
+    croissantBreakfastSandwichLabel.setPixmap(croissantBreakfastSandwichPixmap);
+    croissantBreakfastSandwichLabel.hide();
+
+    QLabel eggsBenedictLabel(&get_cookin_label);
+    QPixmap eggsBenedictPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
+    QTextEdit *eggsBenedictTextEdit = new QTextEdit(&get_cookin_label);
+    eggsBenedictTextEdit->setText("Eggs Benedict with Hollandaise Sauce and Smoked Salmon!\n\nIngredients\n\n- 4 English muffins, split and toasted\n- 8 slices smoked salmon\n- 8 large eggs\n- 1 tablespoon white vinegar\n- Salt and pepper, to taste\n- Fresh chives or parsley, chopped, for garnish\n\nFor the Hollandaise Sauce:\n\n- 3 large egg yolks\n- 1 tablespoon water\n- 1 tablespoon fresh lemon juice\n- 1/2 cup unsalted butter, melted\n- Salt and cayenne pepper, to taste\n\nDirections:\n\n1. To make the Hollandaise sauce, whisk the egg yolks, water, and lemon juice together in a heatproof bowl set over a saucepan of simmering water. Whisk constantly until the mixture starts to thicken and becomes pale yellow, about 2-3 minutes.\n2. Slowly pour the melted butter into the egg mixture, whisking constantly until the sauce has thickened and is smooth. Remove from heat and season with salt and cayenne pepper to taste. Cover and keep warm until ready to serve.\n3. Bring a large pot of water to a boil. Add 1 tablespoon of vinegar to the water. Crack each egg into a separate small bowl. Reduce the heat to low so the water is just simmering, then use a spoon to create a whirlpool in the water. Carefully slide each egg into the center of the whirlpool and cook for 3-4 minutes until the whites are set and the yolks are still runny.\n4. While the eggs are poaching, place a slice of smoked salmon on each toasted English muffin half.Use a slotted spoon to remove the poached eggs from the water and place them on top of the smoked salmon.\n6. Spoon the Hollandaise sauce over the poached eggs and sprinkle with chopped chives or parsley.\n7. Serve immediately and enjoy!");
+    eggsBenedictTextEdit->setGeometry(0, 0, 500, 400);
+    eggsBenedictTextEdit->hide();
+    eggsBenedictLabel.setPixmap(eggsBenedictPixmap);
+    eggsBenedictLabel.hide();
+
+    QLabel belgianWafflesLabel(&get_cookin_label);
+    QPixmap belgianWafflesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
+    QTextEdit *belgianWafflesTextEdit = new QTextEdit(&get_cookin_label);
+    belgianWafflesTextEdit->setText("Belgian Waffles Recipe\n\nIngredients:\n\n- 2 cups all-purpose flour\n- 3/4 cup white sugar\n- 3-1/2 teaspoons baking powder\n- 2 eggs\n- 1-1/2 cups warm milk\n- 1/3 cup melted butter\n- 1 teaspoon vanilla extract\n- 1/2 cup whipped cream\n- Fresh fruit for topping (such as strawberries, blueberries, or raspberries)\n\nDirections:\n\n1. Preheat waffle iron.\n2. In a large bowl, whisk together flour, sugar, and baking powder.\n3. In another bowl, beat eggs until fluffy, then mix in warm milk, melted butter, and vanilla extract.\n4. Pour the wet ingredients into the dry ingredients and mix until smooth.\n5. Pour batter onto the preheated waffle iron and cook until golden brown and crisp.\n6. Serve waffles with whipped cream and fresh fruit toppings.\n");
+    belgianWafflesTextEdit->setGeometry(0, 0, 500, 400);
+    belgianWafflesTextEdit->hide();
+    belgianWafflesLabel.setPixmap(belgianWafflesPixmap);
+    belgianWafflesLabel.hide();
+
     QPushButton pancakesBackButton("Go Back!", &pancakesLabel);
     pancakesBackButton.setGeometry(360, 440, 120, 40);
     pancakesBackButton.setStyleSheet("background-color: lightblue");
@@ -132,11 +186,47 @@ int main(int argc, char *argv[])
     avacadoToastBackButton.setStyleSheet("background-color: lightblue");
     avacadoToastBackButton.hide();
 
+    QPushButton breakfastBurritoBackButton("Go Back!", &breakfastBurritoLabel);
+    breakfastBurritoBackButton.setGeometry(360, 440, 120, 40);
+    breakfastBurritoBackButton.setStyleSheet("background-color: lightblue");
+    breakfastBurritoBackButton.hide();
+
+    QPushButton shakshukaBackButton("Go Back!", &shakshukaLabel);
+    shakshukaBackButton.setGeometry(360, 440, 120, 40);
+    shakshukaBackButton.setStyleSheet("background-color: lightblue");
+    shakshukaBackButton.hide();
+
+    QPushButton huevosRancherosBackButton("Go Back!", &huevosRancherosLabel);
+    huevosRancherosBackButton.setGeometry(360, 440, 120, 40);
+    huevosRancherosBackButton.setStyleSheet("background-color: lightblue");
+    huevosRancherosBackButton.hide();
+
+    QPushButton croissantBreakfastSandwichBackButton("Go Back!", &croissantBreakfastSandwichLabel);
+    croissantBreakfastSandwichBackButton.setGeometry(360, 440, 120, 40);
+    croissantBreakfastSandwichBackButton.setStyleSheet("background-color: lightblue");
+    croissantBreakfastSandwichBackButton.hide();
+
+    QPushButton eggsBenedictBackButton("Go Back!", &eggsBenedictLabel);
+    eggsBenedictBackButton.setGeometry(360, 440, 120, 40);
+    eggsBenedictBackButton.setStyleSheet("background-color: lightblue");
+    eggsBenedictBackButton.hide();
+
+    QPushButton belgianWafflesBackButton("Go Back!", &belgianWafflesLabel);
+    belgianWafflesBackButton.setGeometry(360, 440, 120, 40);
+    belgianWafflesBackButton.setStyleSheet("background-color: lightblue");
+    belgianWafflesBackButton.hide();
+
     QMenu breakfastDishesCategories("Breakfast Dishes Categories", &get_cookin);
     QAction *pancakesRecipe = breakfastDishesCategories.addAction("Pancakes");
     QAction *overnightOatsRecipe = breakfastDishesCategories.addAction("Overnight Oats with Fruits and Nuts");
     QAction *yoghurtParfaitRecipe = breakfastDishesCategories.addAction("Yoghurt Parfait with Granola and Berries");
     QAction *avacadoToastRecipe = breakfastDishesCategories.addAction("Avacado Toast with a Poached Egg");
+    QAction *breakfastBurritoRecipe = breakfastDishesCategories.addAction("Breakfast Burrito with Scrambled Eggs, Bacon and Cheese");
+    QAction *shakshukaRecipe = breakfastDishesCategories.addAction("Shakshuka with Crusty Bread");
+    QAction *huevosRancherosRecipe = breakfastDishesCategories.addAction("Huevos Rancheros with Salsa and Guacamole");
+    QAction *croissantBreakfastSandwichRecipe = breakfastDishesCategories.addAction("Croissant Breakfast Sandwich with Scrambled Eggs, Bacon and Cheese");
+    QAction *eggsBenedictRecipe = breakfastDishesCategories.addAction("Eggs Benedict with Hollandaise Sauce and Smoked Salmon");
+    QAction *belgianWafflesRecipe = breakfastDishesCategories.addAction("Belgian Waffles with Whipped Cream and Fresh Fruit Toppings");
     QMenu seeBreakfastDishesCategories("Click to see breakfast categories", &get_cookin);
     seeBreakfastDishesCategories.addMenu(&breakfastDishesCategories);
 
@@ -196,6 +286,48 @@ int main(int argc, char *argv[])
         avacadoToastBackButton.show();
         avacadoToastTextEdit->show();
     });
+    QObject::connect(breakfastBurritoRecipe, &QAction::triggered, [&breakfastBurritoLabel, &breakfastBurritoTextEdit, &breakfastBurritoPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &breakfastBurritoBackButton](){
+        breakfastDishesLabel.hide();
+        breakfastBurritoLabel.show();
+        bdBackButton.hide();
+        breakfastBurritoBackButton.show();
+        breakfastBurritoTextEdit->show();
+    });
+    QObject::connect(shakshukaRecipe, &QAction::triggered, [&shakshukaLabel, &shakshukaTextEdit, &shakshukaPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &shakshukaBackButton](){
+        breakfastDishesLabel.hide();
+        shakshukaLabel.show();
+        bdBackButton.hide();
+        shakshukaBackButton.show();
+        shakshukaTextEdit->show();
+    });
+    QObject::connect(huevosRancherosRecipe, &QAction::triggered, [&huevosRancherosLabel, &huevosRancherosTextEdit, &huevosRancherosPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &huevosRancherosBackButton](){
+        breakfastDishesLabel.hide();
+        huevosRancherosLabel.show();
+        bdBackButton.hide();
+        huevosRancherosBackButton.show();
+        huevosRancherosTextEdit->show();
+    });
+    QObject::connect(croissantBreakfastSandwichRecipe, &QAction::triggered, [&croissantBreakfastSandwichLabel, &croissantBreakfastSandwichTextEdit, &croissantBreakfastSandwichPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &croissantBreakfastSandwichBackButton](){
+        breakfastDishesLabel.hide();
+        croissantBreakfastSandwichLabel.show();
+        bdBackButton.hide();
+        croissantBreakfastSandwichBackButton.show();
+        croissantBreakfastSandwichTextEdit->show();
+    });
+    QObject::connect(eggsBenedictRecipe, &QAction::triggered, [&eggsBenedictLabel, &eggsBenedictTextEdit, &eggsBenedictPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &eggsBenedictBackButton](){
+        breakfastDishesLabel.hide();
+        eggsBenedictLabel.show();
+        bdBackButton.hide();
+        eggsBenedictBackButton.show();
+        eggsBenedictTextEdit->show();
+    });
+    QObject::connect(belgianWafflesRecipe, &QAction::triggered, [&belgianWafflesLabel, &belgianWafflesTextEdit, &belgianWafflesPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &belgianWafflesBackButton](){
+        breakfastDishesLabel.hide();
+        belgianWafflesLabel.show();
+        bdBackButton.hide();
+        belgianWafflesBackButton.show();
+        belgianWafflesTextEdit->show();
+    });
 
     QObject::connect(&bdBackButton, &QPushButton::clicked, [&get_cookin_label, &breakfastDishesLabel, &gcBackButton, &bdBackButton, &seeCategories]() {
         breakfastDishesLabel.hide();
@@ -235,6 +367,54 @@ int main(int argc, char *argv[])
         bdBackButton.show();
         seeBreakfastDishesCategories.show();
         avacadoToastTextEdit->hide();
+    });
+    QObject::connect(&breakfastBurritoBackButton, &QPushButton::clicked, [&breakfastBurritoLabel, &breakfastBurritoTextEdit, &breakfastDishesLabel, &breakfastBurritoBackButton, &bdBackButton, &seeBreakfastDishesCategories]() {
+        breakfastBurritoLabel.hide();
+        breakfastBurritoBackButton.hide();
+        breakfastDishesLabel.show();
+        bdBackButton.show();
+        seeBreakfastDishesCategories.show();
+        breakfastBurritoTextEdit->hide();
+    });
+    QObject::connect(&shakshukaBackButton, &QPushButton::clicked, [&shakshukaLabel, &shakshukaTextEdit, &breakfastDishesLabel, &shakshukaBackButton, &bdBackButton, &seeBreakfastDishesCategories]() {
+        shakshukaLabel.hide();
+        shakshukaBackButton.hide();
+        breakfastDishesLabel.show();
+        bdBackButton.show();
+        seeBreakfastDishesCategories.show();
+        shakshukaTextEdit->hide();
+    });
+    QObject::connect(&huevosRancherosBackButton, &QPushButton::clicked, [&huevosRancherosLabel, &huevosRancherosTextEdit, &breakfastDishesLabel, &huevosRancherosBackButton, &bdBackButton, &seeBreakfastDishesCategories]() {
+        huevosRancherosLabel.hide();
+        huevosRancherosBackButton.hide();
+        breakfastDishesLabel.show();
+        bdBackButton.show();
+        seeBreakfastDishesCategories.show();
+        huevosRancherosTextEdit->hide();
+    });
+    QObject::connect(&croissantBreakfastSandwichBackButton, &QPushButton::clicked, [&croissantBreakfastSandwichLabel, &croissantBreakfastSandwichTextEdit, &breakfastDishesLabel, &croissantBreakfastSandwichBackButton, &bdBackButton, &seeBreakfastDishesCategories]() {
+        croissantBreakfastSandwichLabel.hide();
+        croissantBreakfastSandwichBackButton.hide();
+        breakfastDishesLabel.show();
+        bdBackButton.show();
+        seeBreakfastDishesCategories.show();
+        croissantBreakfastSandwichTextEdit->hide();
+    });
+    QObject::connect(&eggsBenedictBackButton, &QPushButton::clicked, [&eggsBenedictLabel, &eggsBenedictTextEdit, &breakfastDishesLabel, &eggsBenedictBackButton, &bdBackButton, &seeBreakfastDishesCategories]() {
+        eggsBenedictLabel.hide();
+        eggsBenedictBackButton.hide();
+        breakfastDishesLabel.show();
+        bdBackButton.show();
+        seeBreakfastDishesCategories.show();
+        eggsBenedictTextEdit->hide();
+    });
+    QObject::connect(&belgianWafflesBackButton, &QPushButton::clicked, [&belgianWafflesLabel, &belgianWafflesTextEdit, &breakfastDishesLabel, &belgianWafflesBackButton, &bdBackButton, &seeBreakfastDishesCategories]() {
+        belgianWafflesLabel.hide();
+        belgianWafflesBackButton.hide();
+        breakfastDishesLabel.show();
+        bdBackButton.show();
+        seeBreakfastDishesCategories.show();
+        belgianWafflesTextEdit->hide();
     });
 
     QFont font("Tahoma", 16, QFont::Bold);
