@@ -71,10 +71,30 @@ int main(int argc, char *argv[])
     breakfastDishesLabel.setPixmap(breakfastDishesPixmap);
     breakfastDishesLabel.hide();
 
+    QLabel appetizersAndSnacksLabel(&get_cookin_label);
+    QPixmap appetizersAndSnacksPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    appetizersAndSnacksLabel.setPixmap(appetizersAndSnacksPixmap);
+    appetizersAndSnacksLabel.hide();
+
+    QLabel soupsAndStewsLabel(&get_cookin_label);
+    QPixmap soupsAndStewsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
+    soupsAndStewsLabel.setPixmap(soupsAndStewsPixmap);
+    soupsAndStewsLabel.hide();
+
     QPushButton bdBackButton("Go Back!", &breakfastDishesLabel);
     bdBackButton.setGeometry(360, 440, 120, 40);
     bdBackButton.setStyleSheet("background-color: lightblue");
     bdBackButton.hide();
+
+    QPushButton aasBackButton("Go Back!", &appetizersAndSnacksLabel);
+    aasBackButton.setGeometry(360, 440, 120, 40);
+    aasBackButton.setStyleSheet("background-color: lightblue");
+    aasBackButton.hide();
+
+    QPushButton sasBackButton("Go Back!", &soupsAndStewsLabel);
+    sasBackButton.setGeometry(360, 440, 120, 40);
+    sasBackButton.setStyleSheet("background-color: lightblue");
+    sasBackButton.hide();
 
     QLabel pancakesLabel(&get_cookin_label);
     QPixmap pancakesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -166,6 +186,105 @@ int main(int argc, char *argv[])
     belgianWafflesLabel.setPixmap(belgianWafflesPixmap);
     belgianWafflesLabel.hide();
 
+    QLabel classicGuacamoleLabel(&get_cookin_label);
+    QPixmap classicGuacamolePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *classicGuacamoleTextEdit = new QTextEdit(&get_cookin_label);
+    classicGuacamoleTextEdit->setText("Classic Guacamole!\n\nIngredients:\n\n- 2 ripe avocados, peeled and pitted\n- 1/4 cup diced red onion\n- 1/4 cup chopped fresh cilantro\n- 2 tablespoons lime juice\n- 1/2 teaspoon salt\n- 1/4 teaspoon ground cumin\n- 1/4 teaspoon cayenne pepper\n\nDirections:\n\n1. In a medium bowl, mash the avocados with a fork or a potato masher.\n2. Stir in the diced red onion, chopped cilantro, lime juice, salt, cumin, and cayenne pepper.\n3. Mix well until all ingredients are combined and the guacamole is smooth and creamy.\n4. Taste and adjust seasoning as needed.\n5. Serve immediately with tortilla chips, crackers, or as a topping for tacos, burritos, or sandwiches.");
+    classicGuacamoleTextEdit->setGeometry(0, 0, 500, 400);
+    classicGuacamoleTextEdit->hide();
+    classicGuacamoleLabel.setPixmap(classicGuacamolePixmap);
+    classicGuacamoleLabel.hide();
+
+    QLabel bakedSweetPotatoFriesLabel(&get_cookin_label);
+    QPixmap bakedSweetPotatoFriesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *bakedSweetPotatoFriesTextEdit = new QTextEdit(&get_cookin_label);
+    bakedSweetPotatoFriesTextEdit->setText("Baked Sweet Potato Fries!\n\nIngredients:\n\n- 2 large sweet potatoes, peeled and cut into sticks\n- 2 tablespoons olive oil\n- 1/2 teaspoon salt\n- 1/2 teaspoon garlic powder\n- 1/2 teaspoon paprika\n\nDirections:\n\n1. Preheat oven to 425°F (220°C). Line a baking sheet with parchment paper.\n2. In a large bowl, toss sweet potato sticks with olive oil, salt, garlic powder, and paprika until evenly coated.\n3. Spread the sweet potato sticks out in a single layer on the prepared baking sheet.\n4. Bake for 20-25 minutes, flipping the fries halfway through, until they are crispy and lightly browned on the outside and tender on the inside.\n5. Serve hot with your favorite dipping sauce, such as ketchup or aioli.");
+    bakedSweetPotatoFriesTextEdit->setGeometry(0, 0, 500, 400);
+    bakedSweetPotatoFriesTextEdit->hide();
+    bakedSweetPotatoFriesLabel.setPixmap(bakedSweetPotatoFriesPixmap);
+    bakedSweetPotatoFriesLabel.hide();
+
+    QLabel capreseSkewersLabel(&get_cookin_label);
+    QPixmap capreseSkewersPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *capreseSkewersTextEdit = new QTextEdit(&get_cookin_label);
+    capreseSkewersTextEdit->setText("Caprese Skewers with Balsamic Glaze!\n\nIngredients:\n\n- 1 pint cherry tomatoes, washed and dried\n- 8 ounces fresh mozzarella, cut into bite-sized pieces\n- 1/2 cup fresh basil leaves, washed and dried\n- 1/4 cup balsamic vinegar\n- 2 tablespoons honey\n- 1/4 teaspoon salt\n- 1/4 teaspoon black pepper\n- 16 skewers\n\nDirections:\n\n1. Thread cherry tomatoes, mozzarella, and basil leaves onto skewers.\n2. In a small saucepan, heat balsamic vinegar, honey, salt, and black pepper over medium heat.\n3. Bring the mixture to a simmer and let it cook for 5-7 minutes, stirring occasionally, until it has thickened into a glaze.\n4. Remove the saucepan from heat and let it cool slightly.\n5. Brush the balsamic glaze over the caprese skewers.\n6. Serve the caprese skewers at room temperature as a tasty appetizer or snack.");
+    capreseSkewersTextEdit->setGeometry(0, 0, 500, 400);
+    capreseSkewersTextEdit->hide();
+    capreseSkewersLabel.setPixmap(capreseSkewersPixmap);
+    capreseSkewersLabel.hide();
+
+    QLabel crispyParmesanZucchiniFriesLabel(&get_cookin_label);
+    QPixmap crispyParmesanZucchiniFriesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *crispyParmesanZucchiniFriesTextEdit = new QTextEdit(&get_cookin_label);
+    crispyParmesanZucchiniFriesTextEdit->setText("Crispy Parmesan Zucchini Fries!\n\nIngredients:\n\n- 2 medium zucchini, cut into fries\n- 1/2 cup all-purpose flour\n- 1/2 teaspoon garlic powder\n- 1/2 teaspoon dried oregano\n- 1/4 teaspoon salt\n- 1/4 teaspoon black pepper\n- 2 eggs, beaten\n- 1 cup seasoned breadcrumbs\n- 1/2 cup grated Parmesan cheese\n- Cooking spray\n\nDirections:\n\n1. Preheat oven to 425°F (220°C). Line a baking sheet with parchment paper.\n2. In a shallow dish, combine flour, garlic powder, oregano, salt, and black pepper.\n3. In another shallow dish, beat eggs.\n4. In a third shallow dish, combine breadcrumbs and grated Parmesan cheese.\n5. Dredge zucchini fries in the flour mixture, shaking off any excess.\n6. Dip the fries into the beaten eggs, then coat them with the breadcrumb mixture.\n7. Place the coated fries in a single layer on the prepared baking sheet.\n8. Spray the fries with cooking spray.\n9. Bake for 15-20 minutes, flipping the fries halfway through, until they are golden brown and crispy.\n10. Serve hot with your favorite dipping sauce, such as marinara or ranch.");
+    crispyParmesanZucchiniFriesTextEdit->setGeometry(0, 0, 500, 400);
+    crispyParmesanZucchiniFriesTextEdit->hide();
+    crispyParmesanZucchiniFriesLabel.setPixmap(capreseSkewersPixmap);
+    crispyParmesanZucchiniFriesLabel.hide();
+
+    QLabel spinachAndArtichokeDipLabel(&get_cookin_label);
+    QPixmap spinachAndArtichokeDipPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *spinachAndArtichokeDipTextEdit = new QTextEdit(&get_cookin_label);
+    spinachAndArtichokeDipTextEdit->setText("Spinach and Artichoke Dip!\n\nIngredients:\n\n- 8 oz cream cheese, softened\n- 1/4 cup mayonnaise\n- 1/4 cup sour cream\n- 1/4 cup grated Parmesan cheese\n- 1/4 cup grated Romano cheese\n- 1/2 cup shredded mozzarella cheese\n- 1 clove garlic, minced\n- 1/4 teaspoon red pepper flakes\n- 1/4 teaspoon salt\n- 1/4 teaspoon black pepper\n- 1 can (14 oz) artichoke hearts, drained and chopped\n- 1 package (10 oz) frozen chopped spinach, thawed and drained\n\nDirections:\n\n1. Preheat oven to 350°F (175°C).\n2. In a large bowl, mix cream cheese, mayonnaise, sour cream, Parmesan cheese, Romano cheese, mozzarella cheese, garlic, red pepper flakes, salt, and black pepper until well combined.\n3. Add chopped artichoke hearts and spinach to the mixture, stirring until evenly distributed.\n4. Spread the mixture evenly in a baking dish.\n5. Bake for 20-25 minutes, or until the dip is hot and bubbly.\n6. Serve hot with tortilla chips, pita chips, or sliced baguette.");
+    spinachAndArtichokeDipTextEdit->setGeometry(0, 0, 500, 400);
+    spinachAndArtichokeDipTextEdit->hide();
+    spinachAndArtichokeDipLabel.setPixmap(spinachAndArtichokeDipPixmap);
+    spinachAndArtichokeDipLabel.hide();
+
+    QLabel miniQuichesLabel(&get_cookin_label);
+    QPixmap miniQuichesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *miniQuichesTextEdit = new QTextEdit(&get_cookin_label);
+    miniQuichesTextEdit->setText("Mini Quiches with Gruyere and Bacon!\n\nIngredients:\n- 1 sheet frozen puff pastry, thawed\n- 6 slices bacon, cooked and crumbled\n- 1/2 cup shredded Gruyere cheese\n- 2 tablespoons chopped fresh chives\n- 3 eggs\n- 1/2 cup heavy cream\n- Salt and black pepper, to taste\n\nDirections:\n\n1. Preheat oven to 375°F (190°C). Grease a 12-cup muffin tin.\n2. Unfold the puff pastry sheet onto a floured surface. Roll it out slightly to smooth out any creases.\n3. Cut the pastry sheet into 12 equal squares.\n4. Fit each pastry square into a muffin cup, pressing it down gently to create a pastry cup.\n5. Sprinkle the crumbled bacon, shredded Gruyere cheese, and chopped chives evenly into each pastry cup.\n6. In a small bowl, whisk together the eggs, heavy cream, salt, and black pepper.\n7. Pour the egg mixture into each pastry cup, filling it up to the top.\n8. Bake for 20-25 minutes, or until the quiches are puffed up and golden brown.\n9. Let cool for a few minutes before removing the quiches from the muffin tin.\n10. Serve warm or at room temperature.");
+    miniQuichesTextEdit->setGeometry(0, 0, 500, 400);
+    miniQuichesTextEdit->hide();
+    miniQuichesLabel.setPixmap(miniQuichesPixmap);
+    miniQuichesLabel.hide();
+
+    QLabel buffaloChickenMeatballsLabel(&get_cookin_label);
+    QPixmap buffaloChickenMeatballsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *buffaloChickenMeatballsTextEdit = new QTextEdit(&get_cookin_label);
+    buffaloChickenMeatballsTextEdit->setText("Buffalo Chicken Meatballs!\n\nIngredients:\n\n- 1 lb ground chicken\n- 1/2 cup panko breadcrumbs\n- 1/4 cup chopped celery\n- 1/4 cup chopped onion\n- 1 egg, lightly beaten\n- 1/4 cup buffalo sauce\n- 1/4 cup crumbled blue cheese\n- 1/4 teaspoon salt\n- 1/4 teaspoon black pepper\n- Ranch or blue cheese dressing, for serving\n\nDirections:\n\n1. Preheat oven to 400°F (200°C). Grease a baking sheet.\n2. In a large bowl, mix together ground chicken, panko breadcrumbs, chopped celery, chopped onion, lightly beaten egg, buffalo sauce, crumbled blue cheese, salt, and black pepper until well combined.\n3. Using a small cookie scoop or tablespoon, form the mixture into 1-inch meatballs and place them onto the prepared baking sheet.\n4. Bake for 15-18 minutes, or until the meatballs are cooked through and lightly browned.\n5. Serve hot with ranch or blue cheese dressing for dipping.");
+    buffaloChickenMeatballsTextEdit->setGeometry(0, 0, 500, 400);
+    buffaloChickenMeatballsTextEdit->hide();
+    buffaloChickenMeatballsLabel.setPixmap(buffaloChickenMeatballsPixmap);
+    buffaloChickenMeatballsLabel.hide();
+
+    QLabel grilledShrimpLabel(&get_cookin_label);
+    QPixmap grilledShrimpPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *grilledShrimpTextEdit = new QTextEdit(&get_cookin_label);
+    grilledShrimpTextEdit->setText("Grilled Shrimp with Mango Salsa!\n\nIngredients:\n\n- 1 lb large shrimp, peeled and deveined\n- 1 tablespoon olive oil\n- Salt and black pepper, to taste\n- 1 large ripe mango, peeled and diced\n- 1/2 red bell pepper, diced\n- 1/4 red onion, diced\n- 2 tablespoons chopped fresh cilantro\n- 1 tablespoon lime juice\n\nDirections:\n\n1. Preheat grill to medium-high heat.\n2. In a bowl, toss the peeled and deveined shrimp with olive oil, salt, and black pepper.\n3. Grill the shrimp for 2-3 minutes per side, or until they are cooked through and lightly charred.\n4. In a separate bowl, combine the diced mango, red bell pepper, red onion, chopped cilantro, and lime juice.\n5. Serve the grilled shrimp hot with the mango salsa on top or on the side.");
+    grilledShrimpTextEdit->setGeometry(0, 0, 500, 400);
+    grilledShrimpTextEdit->hide();
+    grilledShrimpLabel.setPixmap(grilledShrimpPixmap);
+    grilledShrimpLabel.hide();
+
+    QLabel sausageRollsLabel(&get_cookin_label);
+    QPixmap sausageRollsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *sausageRollsTextEdit = new QTextEdit(&get_cookin_label);
+    sausageRollsTextEdit->setText("Homemade Sausage Rolls with Spicy Mustard!\n\nIngredients:\n\n- 1 lb ground pork sausage\n- 1/2 cup breadcrumbs\n- 1/4 cup chopped onion\n- 1 egg, lightly beaten\n- 1 teaspoon dried sage\n- 1/2 teaspoon salt\n- 1/4 teaspoon black pepper\n- 1 sheet frozen puff pastry, thawed\n- 1/4 cup spicy brown mustard\n\nDirections:\n\n1. Preheat oven to 400°F (200°C). Line a baking sheet with parchment paper.\n2. In a large bowl, mix together ground pork sausage, breadcrumbs, chopped onion, lightly beaten egg, dried sage, salt, and black pepper until well combined.\n3. Roll out the puff pastry sheet on a lightly floured surface into a rectangle approximately 12 inches by 8 inches.\n4. Spread the spicy brown mustard evenly over the puff pastry sheet.\n5. Spoon the sausage mixture onto the puff pastry sheet in a line down the center.\n6. Fold the puff pastry over the sausage mixture and press the edges together to seal.\n7. Cut the sausage roll into 8-10 pieces and place them onto the prepared baking sheet.\n8. Bake for 20-25 minutes, or until the pastry is golden brown and the sausage is cooked through.\n9. Serve hot with extra spicy brown mustard for dipping.");
+    sausageRollsTextEdit->setGeometry(0, 0, 500, 400);
+    sausageRollsTextEdit->hide();
+    sausageRollsLabel.setPixmap(sausageRollsPixmap);
+    sausageRollsLabel.hide();
+
+    QLabel lobsterBisqueLabel(&get_cookin_label);
+    QPixmap lobsterBisquePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
+    QTextEdit *lobsterBisqueTextEdit = new QTextEdit(&get_cookin_label);
+    lobsterBisqueTextEdit->setText("Lobster Bisque Shooters with Truffle Oil!\n\nIngredients:\n\n- 2 lobster tails, cooked and meat removed\n- 1 tablespoon olive oil\n- 1 tablespoon butter\n- 1/2 onion, chopped\n- 2 cloves garlic, minced\n- 1/4 cup brandy\n- 1 tablespoon tomato paste\n- 4 cups fish or seafood stock\n- 1 cup heavy cream\n- Salt and black pepper, to taste\n- Truffle oil, for drizzling\n- Chopped fresh chives, for garnish\n\nDirections:\n\n1. In a large pot, heat the olive oil and butter over medium heat.\n2. Add the chopped onion and minced garlic, and sauté for 2-3 minutes, or until the onion is soft and translucent.\n3. Add the cooked lobster meat to the pot, and stir to combine.\n4. Pour in the brandy, and cook until most of the liquid has evaporated.\n5. Add the tomato paste and fish or seafood stock to the pot, and bring to a simmer.\n6. Allow the soup to simmer for 20-30 minutes, or until it has reduced by about one-third and thickened slightly.\n7. Remove the pot from heat, and use an immersion blender or transfer the soup to a blender to puree until smooth.\n8. Return the pureed soup to the pot, and stir in the heavy cream. Heat the soup gently over low heat until warmed through.\n9. Season with salt and black pepper to taste.\n10. Ladle the soup into shot glasses or small bowls, and drizzle with truffle oil.\n11. Garnish with chopped fresh chives, and serve immediately.");
+    lobsterBisqueTextEdit->setGeometry(0, 0, 500, 400);
+    lobsterBisqueTextEdit->hide();
+    lobsterBisqueLabel.setPixmap(lobsterBisquePixmap);
+    lobsterBisqueLabel.hide();
+
+    QLabel tomatoBasilSoupLabel(&get_cookin_label);
+    QPixmap tomatoBasilSoupPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
+    QTextEdit *tomatoBasilSoupTextEdit = new QTextEdit(&get_cookin_label);
+    tomatoBasilSoupTextEdit->setText("Tomato Basil Soup!\n\nIngredients:\n\n- 2 tablespoons olive oil\n- 1 onion, chopped\n- 2 cloves garlic, minced\n- 2 cans (28 oz each) crushed tomatoes\n- 1 can (14 oz) chicken broth\n- 1 tablespoon sugar\n- 1 teaspoon salt\n- 1/4 teaspoon black pepper\n- 1/4 cup chopped fresh basil leaves\n- 1/2 cup heavy cream\n\nDirections:\n\n1. In a large pot, heat the olive oil over medium heat.\n2. Add the chopped onion and minced garlic, and sauté for 2-3 minutes, or until the onion is soft and translucent.\n3. Add the crushed tomatoes, chicken broth, sugar, salt, and black pepper to the pot, and bring to a boil.\n4. Reduce the heat to low, and simmer the soup for 15-20 minutes, stirring occasionally.\n5. Stir in the chopped fresh basil leaves, and simmer for an additional 5-10 minutes.\n6. Use an immersion blender or transfer the soup to a blender to puree until smooth.\n7. Return the pureed soup to the pot, and stir in the heavy cream. Heat the soup gently over low heat until warmed through.\n8. Season with additional salt and black pepper to taste, if desired.\n9. Serve hot with crusty bread or croutons.");
+    tomatoBasilSoupTextEdit->setGeometry(0, 0, 500, 400);
+    tomatoBasilSoupTextEdit->hide();
+    tomatoBasilSoupLabel.setPixmap(tomatoBasilSoupPixmap);
+    tomatoBasilSoupLabel.hide();
+
     QPushButton pancakesBackButton("Go Back!", &pancakesLabel);
     pancakesBackButton.setGeometry(360, 440, 120, 40);
     pancakesBackButton.setStyleSheet("background-color: lightblue");
@@ -216,6 +335,61 @@ int main(int argc, char *argv[])
     belgianWafflesBackButton.setStyleSheet("background-color: lightblue");
     belgianWafflesBackButton.hide();
 
+    QPushButton classicGuacamoleBackButton("Go Back!", &classicGuacamoleLabel);
+    classicGuacamoleBackButton.setGeometry(360, 440, 120, 40);
+    classicGuacamoleBackButton.setStyleSheet("background-color: lightblue");
+    classicGuacamoleBackButton.hide();
+
+    QPushButton bakedSweetPotatoFriesBackButton("Go Back!", &bakedSweetPotatoFriesLabel);
+    bakedSweetPotatoFriesBackButton.setGeometry(360, 440, 120, 40);
+    bakedSweetPotatoFriesBackButton.setStyleSheet("background-color: lightblue");
+    bakedSweetPotatoFriesBackButton.hide();
+
+    QPushButton capreseSkewersBackButton("Go Back!", &capreseSkewersLabel);
+    capreseSkewersBackButton.setGeometry(360, 440, 120, 40);
+    capreseSkewersBackButton.setStyleSheet("background-color: lightblue");
+    capreseSkewersBackButton.hide();
+
+    QPushButton crispyParmesanZucchiniFriesBackButton("Go Back!", &crispyParmesanZucchiniFriesLabel);
+    crispyParmesanZucchiniFriesBackButton.setGeometry(360, 440, 120, 40);
+    crispyParmesanZucchiniFriesBackButton.setStyleSheet("background-color: lightblue");
+    crispyParmesanZucchiniFriesBackButton.hide();
+
+    QPushButton spinachAndArtichokeDipBackButton("Go Back!", &spinachAndArtichokeDipLabel);
+    spinachAndArtichokeDipBackButton.setGeometry(360, 440, 120, 40);
+    spinachAndArtichokeDipBackButton.setStyleSheet("background-color: lightblue");
+    spinachAndArtichokeDipBackButton.hide();
+
+    QPushButton miniQuichesBackButton("Go Back!", &miniQuichesLabel);
+    miniQuichesBackButton.setGeometry(360, 440, 120, 40);
+    miniQuichesBackButton.setStyleSheet("background-color: lightblue");
+    miniQuichesBackButton.hide();
+
+    QPushButton buffaloChickenMeatballsBackButton("Go Back!", &buffaloChickenMeatballsLabel);
+    buffaloChickenMeatballsBackButton.setGeometry(360, 440, 120, 40);
+    buffaloChickenMeatballsBackButton.setStyleSheet("background-color: lightblue");
+    buffaloChickenMeatballsBackButton.hide();
+
+    QPushButton grilledShrimpBackButton("Go Back!", &grilledShrimpLabel);
+    grilledShrimpBackButton.setGeometry(360, 440, 120, 40);
+    grilledShrimpBackButton.setStyleSheet("background-color: lightblue");
+    grilledShrimpBackButton.hide();
+
+    QPushButton sausageRollsBackButton("Go Back!", &sausageRollsLabel);
+    sausageRollsBackButton.setGeometry(360, 440, 120, 40);
+    sausageRollsBackButton.setStyleSheet("background-color: lightblue");
+    sausageRollsBackButton.hide();
+
+    QPushButton lobsterBisqueBackButton("Go Back!", &lobsterBisqueLabel);
+    lobsterBisqueBackButton.setGeometry(360, 440, 120, 40);
+    lobsterBisqueBackButton.setStyleSheet("background-color: lightblue");
+    lobsterBisqueBackButton.hide();
+
+    QPushButton tomatoBasilSoupBackButton("Go Back!", &tomatoBasilSoupLabel);
+    tomatoBasilSoupBackButton.setGeometry(360, 440, 120, 40);
+    tomatoBasilSoupBackButton.setStyleSheet("background-color: lightblue");
+    tomatoBasilSoupBackButton.hide();
+
     QMenu breakfastDishesCategories("Breakfast Dishes Categories", &get_cookin);
     QAction *pancakesRecipe = breakfastDishesCategories.addAction("Pancakes");
     QAction *overnightOatsRecipe = breakfastDishesCategories.addAction("Overnight Oats with Fruits and Nuts");
@@ -230,6 +404,25 @@ int main(int argc, char *argv[])
     QMenu seeBreakfastDishesCategories("Click to see breakfast categories", &get_cookin);
     seeBreakfastDishesCategories.addMenu(&breakfastDishesCategories);
 
+    QMenu appetizersAndSnacksCategories("Appetizers and Snacks", &get_cookin);
+    QAction *classicGuacamoleRecipe = appetizersAndSnacksCategories.addAction("Classic Guacamole");
+    QAction *bakedSweetPotatoFriesRecipe = appetizersAndSnacksCategories.addAction("Baked Sweet Potato Fries");
+    QAction *capreseSkewersRecipe = appetizersAndSnacksCategories.addAction("Caprese Skewers with Balsamic Glaze");
+    QAction *crispyParmesanZucchiniFriesRecipe = appetizersAndSnacksCategories.addAction("Crispy Parmesan Zucchini Fries");
+    QAction *spinachAndArtichokeDipRecipe = appetizersAndSnacksCategories.addAction("Spinach and Artichoke Dip");
+    QAction *miniQuichesRecipe = appetizersAndSnacksCategories.addAction("Mini Quiches with Gruyere and Bacon");
+    QAction *buffaloChickenMeatballsRecipe = appetizersAndSnacksCategories.addAction("Buffalo Chicken Meatballs");
+    QAction *grilledShrimpRecipe = appetizersAndSnacksCategories.addAction("Grilled Shrimp with Mango Salsa");
+    QAction *sausageRollsRecipe = appetizersAndSnacksCategories.addAction("Homemade Sausage Rolls with Spicy Mustard");
+    QAction *lobsterBisqueRecipe = appetizersAndSnacksCategories.addAction("Lobster Bisque Shooters with Truffle Oil");
+    QMenu seeAppetizersAndSnacksCategories("Click to see appetizers and snacks", &get_cookin);
+    seeAppetizersAndSnacksCategories.addMenu(&appetizersAndSnacksCategories);
+
+    QMenu soupsAndStewsCategories("Soups and Stews", &get_cookin);
+    QAction *tomatoBasilSoupRecipe = soupsAndStewsCategories.addAction("Tomato Basil Soup");
+    QMenu seeSoupsAndStewsCategories("Click to see soups and stews", &get_cookin);
+    seeSoupsAndStewsCategories.addMenu(&soupsAndStewsCategories);
+
     QMenu categories("Cooking Categories", &get_cookin);
     QAction *breakfastDishes = categories.addAction("Breakfast Dishes");
     QObject::connect(breakfastDishes, &QAction::triggered, [&](){
@@ -239,7 +432,19 @@ int main(int argc, char *argv[])
         seeBreakfastDishesCategories.exec(get_cookin.mapToGlobal(QPoint(-20, -150)));
     });
     QAction *appetizersAndSnacks = categories.addAction("Appetizers and Snacks");
+    QObject::connect(appetizersAndSnacks, &QAction::triggered, [&](){
+        appetizersAndSnacksLabel.show();
+        gcBackButton.hide();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.exec(get_cookin.mapToGlobal(QPoint(-20, -150)));
+    });
     QAction *soupsAndStews = categories.addAction("Soups and Stews");
+    QObject::connect(soupsAndStews, &QAction::triggered, [&](){
+        soupsAndStewsLabel.show();
+        gcBackButton.hide();
+        sasBackButton.show();
+        seeSoupsAndStewsCategories.exec(get_cookin.mapToGlobal(QPoint(-20, -150)));
+    });
     QAction *salads = categories.addAction("Salads");
     QAction *vegetarianAndVeganMeals = categories.addAction("Vegetarian and Vegan Meals");
     QAction *seafoodDishes = categories.addAction("Seafood Dishes");
@@ -328,12 +533,92 @@ int main(int argc, char *argv[])
         belgianWafflesBackButton.show();
         belgianWafflesTextEdit->show();
     });
+    QObject::connect(classicGuacamoleRecipe, &QAction::triggered, [&classicGuacamoleLabel, &classicGuacamoleTextEdit, &classicGuacamolePixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &classicGuacamoleBackButton](){
+        classicGuacamoleLabel.show();
+        aasBackButton.hide();
+        classicGuacamoleBackButton.show();
+        classicGuacamoleTextEdit->show();
+    });
+    QObject::connect(bakedSweetPotatoFriesRecipe, &QAction::triggered, [&bakedSweetPotatoFriesLabel, &bakedSweetPotatoFriesTextEdit, &bakedSweetPotatoFriesPixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &bakedSweetPotatoFriesBackButton](){
+        bakedSweetPotatoFriesLabel.show();
+        aasBackButton.hide();
+        bakedSweetPotatoFriesBackButton.show();
+        bakedSweetPotatoFriesTextEdit->show();
+    });
+    QObject::connect(capreseSkewersRecipe, &QAction::triggered, [&capreseSkewersLabel, capreseSkewersTextEdit, &capreseSkewersPixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &capreseSkewersBackButton](){
+        capreseSkewersLabel.show();
+        aasBackButton.hide();
+        capreseSkewersBackButton.show();
+        capreseSkewersTextEdit->show();
+    });
+    QObject::connect(crispyParmesanZucchiniFriesRecipe, &QAction::triggered, [&crispyParmesanZucchiniFriesLabel, &crispyParmesanZucchiniFriesTextEdit, &crispyParmesanZucchiniFriesPixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &crispyParmesanZucchiniFriesBackButton](){
+        crispyParmesanZucchiniFriesLabel.show();
+        aasBackButton.hide();
+        crispyParmesanZucchiniFriesBackButton.show();
+        crispyParmesanZucchiniFriesTextEdit->show();
+    });
+    QObject::connect(spinachAndArtichokeDipRecipe, &QAction::triggered, [&spinachAndArtichokeDipLabel, &spinachAndArtichokeDipTextEdit, &spinachAndArtichokeDipPixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &spinachAndArtichokeDipBackButton](){
+        spinachAndArtichokeDipLabel.show();
+        aasBackButton.hide();
+        spinachAndArtichokeDipBackButton.show();
+        spinachAndArtichokeDipTextEdit->show();
+    });
+    QObject::connect(miniQuichesRecipe, &QAction::triggered, [&miniQuichesLabel, &miniQuichesTextEdit, &miniQuichesPixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &miniQuichesBackButton](){
+        miniQuichesLabel.show();
+        aasBackButton.hide();
+        miniQuichesBackButton.show();
+        miniQuichesTextEdit->show();
+    });
+    QObject::connect(buffaloChickenMeatballsRecipe, &QAction::triggered, [&buffaloChickenMeatballsLabel, &buffaloChickenMeatballsTextEdit, &buffaloChickenMeatballsPixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &buffaloChickenMeatballsBackButton](){
+        buffaloChickenMeatballsLabel.show();
+        aasBackButton.hide();
+        buffaloChickenMeatballsBackButton.show();
+        buffaloChickenMeatballsTextEdit->show();
+    });
+    QObject::connect(grilledShrimpRecipe, &QAction::triggered, [&grilledShrimpLabel, &grilledShrimpTextEdit, &grilledShrimpPixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &grilledShrimpBackButton](){
+        grilledShrimpLabel.show();
+        aasBackButton.hide();
+        grilledShrimpBackButton.show();
+        grilledShrimpTextEdit->show();
+    });
+    QObject::connect(sausageRollsRecipe, &QAction::triggered, [&sausageRollsLabel, &sausageRollsTextEdit, &sausageRollsPixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &sausageRollsBackButton](){
+        sausageRollsLabel.show();
+        aasBackButton.hide();
+        sausageRollsBackButton.show();
+        sausageRollsTextEdit->show();
+    });
+    QObject::connect(lobsterBisqueRecipe, &QAction::triggered, [&lobsterBisqueLabel, &lobsterBisqueTextEdit, &lobsterBisquePixmap, &get_cookin_label, &appetizersAndSnacksLabel, &aasBackButton, &lobsterBisqueBackButton](){
+        lobsterBisqueLabel.show();
+        aasBackButton.hide();
+        lobsterBisqueBackButton.show();
+        lobsterBisqueTextEdit->show();
+    });
+    QObject::connect(tomatoBasilSoupRecipe, &QAction::triggered, [&tomatoBasilSoupLabel, &tomatoBasilSoupTextEdit, &tomatoBasilSoupPixmap, &get_cookin_label, &appetizersAndSnacksLabel, &sasBackButton, &tomatoBasilSoupBackButton](){
+        tomatoBasilSoupLabel.show();
+        sasBackButton.hide();
+        tomatoBasilSoupBackButton.show();
+        tomatoBasilSoupTextEdit->show();
+    });
 
     QObject::connect(&bdBackButton, &QPushButton::clicked, [&get_cookin_label, &breakfastDishesLabel, &gcBackButton, &bdBackButton, &seeCategories]() {
         breakfastDishesLabel.hide();
         get_cookin_label.show();
         gcBackButton.show();
         bdBackButton.hide();
+        seeCategories.show();
+    });
+    QObject::connect(&aasBackButton, &QPushButton::clicked, [&get_cookin_label, &appetizersAndSnacksLabel, &gcBackButton, &aasBackButton, &seeCategories]() {
+        appetizersAndSnacksLabel.hide();
+        get_cookin_label.show();
+        gcBackButton.show();
+        aasBackButton.hide();
+        seeCategories.show();
+    });
+    QObject::connect(&sasBackButton, &QPushButton::clicked, [&get_cookin_label, &soupsAndStewsLabel, &gcBackButton, &sasBackButton, &seeCategories]() {
+        soupsAndStewsLabel.hide();
+        get_cookin_label.show();
+        gcBackButton.show();
+        sasBackButton.hide();
         seeCategories.show();
     });
     QObject::connect(&pancakesBackButton, &QPushButton::clicked, [&pancakesLabel, &pancakesTextEdit, &breakfastDishesLabel, &pancakesBackButton, &bdBackButton, &seeBreakfastDishesCategories]() {
@@ -415,6 +700,94 @@ int main(int argc, char *argv[])
         bdBackButton.show();
         seeBreakfastDishesCategories.show();
         belgianWafflesTextEdit->hide();
+    });
+    QObject::connect(&classicGuacamoleBackButton, &QPushButton::clicked, [&classicGuacamoleLabel, &classicGuacamoleTextEdit, &appetizersAndSnacksLabel, &classicGuacamoleBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        classicGuacamoleLabel.hide();
+        classicGuacamoleBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        classicGuacamoleTextEdit->hide();
+    });
+    QObject::connect(&bakedSweetPotatoFriesBackButton, &QPushButton::clicked, [&bakedSweetPotatoFriesLabel, &bakedSweetPotatoFriesTextEdit, &appetizersAndSnacksLabel, &bakedSweetPotatoFriesBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        bakedSweetPotatoFriesLabel.hide();
+        bakedSweetPotatoFriesBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        bakedSweetPotatoFriesTextEdit->hide();
+    });
+    QObject::connect(&capreseSkewersBackButton, &QPushButton::clicked, [&capreseSkewersLabel, &capreseSkewersTextEdit, &appetizersAndSnacksLabel, &capreseSkewersBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        capreseSkewersLabel.hide();
+        capreseSkewersBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        capreseSkewersTextEdit->hide();
+    });
+    QObject::connect(&crispyParmesanZucchiniFriesBackButton, &QPushButton::clicked, [&crispyParmesanZucchiniFriesLabel, &crispyParmesanZucchiniFriesTextEdit, &appetizersAndSnacksLabel, &crispyParmesanZucchiniFriesBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        crispyParmesanZucchiniFriesLabel.hide();
+        crispyParmesanZucchiniFriesBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        crispyParmesanZucchiniFriesTextEdit->hide();
+    });
+    QObject::connect(&spinachAndArtichokeDipBackButton, &QPushButton::clicked, [&spinachAndArtichokeDipLabel, &spinachAndArtichokeDipTextEdit, &appetizersAndSnacksLabel, &spinachAndArtichokeDipBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        spinachAndArtichokeDipLabel.hide();
+        spinachAndArtichokeDipBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        spinachAndArtichokeDipTextEdit->hide();
+    });
+    QObject::connect(&miniQuichesBackButton, &QPushButton::clicked, [&miniQuichesLabel, &miniQuichesTextEdit, &appetizersAndSnacksLabel, &miniQuichesBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        miniQuichesLabel.hide();
+        miniQuichesBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        miniQuichesTextEdit->hide();
+    });
+    QObject::connect(&buffaloChickenMeatballsBackButton, &QPushButton::clicked, [&buffaloChickenMeatballsLabel, &buffaloChickenMeatballsTextEdit, &appetizersAndSnacksLabel, &buffaloChickenMeatballsBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        buffaloChickenMeatballsLabel.hide();
+        buffaloChickenMeatballsBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        buffaloChickenMeatballsTextEdit->hide();
+    });
+    QObject::connect(&grilledShrimpBackButton, &QPushButton::clicked, [&grilledShrimpLabel, &grilledShrimpTextEdit, &appetizersAndSnacksLabel, &grilledShrimpBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        grilledShrimpLabel.hide();
+        grilledShrimpBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        grilledShrimpTextEdit->hide();
+    });
+    QObject::connect(&sausageRollsBackButton, &QPushButton::clicked, [&sausageRollsLabel, &sausageRollsTextEdit, &appetizersAndSnacksLabel, &sausageRollsBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        sausageRollsLabel.hide();
+        sausageRollsBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        sausageRollsTextEdit->hide();
+    });
+    QObject::connect(&lobsterBisqueBackButton, &QPushButton::clicked, [&lobsterBisqueLabel, &lobsterBisqueTextEdit, &appetizersAndSnacksLabel, &lobsterBisqueBackButton, &aasBackButton, &seeAppetizersAndSnacksCategories]() {
+        lobsterBisqueLabel.hide();
+        lobsterBisqueBackButton.hide();
+        appetizersAndSnacksLabel.show();
+        aasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        lobsterBisqueTextEdit->hide();
+    });
+    QObject::connect(&tomatoBasilSoupBackButton, &QPushButton::clicked, [&tomatoBasilSoupLabel, &tomatoBasilSoupTextEdit, &soupsAndStewsLabel, &tomatoBasilSoupBackButton, &sasBackButton, &seeAppetizersAndSnacksCategories]() {
+        tomatoBasilSoupLabel.hide();
+        tomatoBasilSoupBackButton.hide();
+        soupsAndStewsLabel.show();
+        sasBackButton.show();
+        seeAppetizersAndSnacksCategories.show();
+        tomatoBasilSoupTextEdit->hide();
     });
 
     QFont font("Tahoma", 16, QFont::Bold);
