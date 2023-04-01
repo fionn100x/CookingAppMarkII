@@ -43,6 +43,15 @@ int main(int argc, char *argv[])
 
     credits_label.hide();
 
+    QLabel myFavourites_label(&label);
+    myFavourites_label.setGeometry(0, 0, pixmap.width(), pixmap.height());
+    myFavourites_label.setScaledContents(true);
+
+    QPixmap myFavourites_image("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\myFavourites.png");
+    myFavourites_label.setPixmap(myFavourites_image);
+
+    myFavourites_label.hide();
+
     QPushButton get_cookin("Get Cookin'!", &label);
     get_cookin.setGeometry(20, 250, 150, 50);
 
@@ -57,13 +66,19 @@ int main(int argc, char *argv[])
 
     QPushButton credits("Credits", &label);
     credits.setGeometry(20, 370, 150, 50);
+
     QPushButton cBackButton("Go Back!", &credits_label);
     cBackButton.setGeometry(360, 440, 120, 40);
     cBackButton.setStyleSheet("background-color: lightblue");
     cBackButton.hide();
 
-    QPushButton settings("Settings", &label);
-    settings.setGeometry(20, 430, 150, 50);
+    QPushButton myFavourites("My Favourites", &label);
+    myFavourites.setGeometry(20, 430, 150, 50);
+
+    QPushButton mfBackButton("Go Back!", &myFavourites_label);
+    mfBackButton.setGeometry(360, 440, 120, 40);
+    mfBackButton.setStyleSheet("background-color: lightblue");
+    mfBackButton.hide();
 
 
 
@@ -2688,14 +2703,15 @@ int main(int argc, char *argv[])
     get_cookin.setFont(font);
     quit.setFont(font);
     credits.setFont(font);
-    settings.setFont(font);
+    myFavourites.setFont(font);
     cBackButton.setFont(font);
     gcBackButton.setFont(font);
+    mfBackButton.setFont(font);
 
     get_cookin.setStyleSheet("background-color: pink");
     quit.setStyleSheet("background-color: red");
     credits.setStyleSheet("background-color: orange");
-    settings.setStyleSheet("background-color: yellow");
+    myFavourites.setStyleSheet("background-color: yellow");
 
     //resizing the window to the size of the pixmap
     label.resize(pixmap.size());
@@ -2712,37 +2728,37 @@ int main(int argc, char *argv[])
     favicon.setWindowTitle("Recipe Rendezvous");
     favicon.show();
 
-    QObject::connect(&get_cookin, &QPushButton::clicked, [&get_cookin_label, &get_cookin, &quit, &credits, &settings, &label, &gcBackButton, &seeCategories]() {
+    QObject::connect(&get_cookin, &QPushButton::clicked, [&get_cookin_label, &get_cookin, &quit, &credits, &myFavourites, &label, &gcBackButton, &seeCategories]() {
         gcBackButton.hide();
         get_cookin_label.show();
         get_cookin.hide();
         quit.hide();
         credits.hide();
-        settings.hide();
+        myFavourites.hide();
 
         gcBackButton.show();
         gcBackButton.raise();
 
         seeCategories.exec(get_cookin.mapToGlobal(QPoint(-20, -150)));
 
-        QObject::connect(&gcBackButton, &QPushButton::clicked, [&label, &get_cookin_label, &get_cookin, &quit, &credits, &settings, &gcBackButton]() {
+        QObject::connect(&gcBackButton, &QPushButton::clicked, [&label, &get_cookin_label, &get_cookin, &quit, &credits, &myFavourites, &gcBackButton]() {
             get_cookin_label.hide();
             label.show();
             get_cookin.show();
             quit.show();
             credits.show();
-            settings.show();
+            myFavourites.show();
             gcBackButton.hide();
         });
     });
 
 
-    QObject::connect(&credits, &QPushButton::clicked, [&credits_label, &get_cookin, &quit, &credits, &settings, &label, &cBackButton]() {
+    QObject::connect(&credits, &QPushButton::clicked, [&credits_label, &get_cookin, &quit, &credits, &myFavourites, &label, &cBackButton]() {
         credits_label.show();
         get_cookin.hide();
         quit.hide();
         credits.hide();
-        settings.hide();
+        myFavourites.hide();
 
         QVBoxLayout* layout = new QVBoxLayout(&credits_label);
         QLabel* textLabel = new QLabel("Introducing Recipe Rendezvous, the ultimate cooking recipe app designed by <font color='red'>Fionn O'Gorman</font> (Student ID: 21329354). With Recipe Rendezvous, discover new and exciting recipes right from your front home screen! We are excited to help people learn new recipes and unlock their full culinary potential.", &credits_label);
@@ -2758,14 +2774,46 @@ int main(int argc, char *argv[])
         cBackButton.show();
         cBackButton.raise();
 
-        QObject::connect(&cBackButton, &QPushButton::clicked, [&label, &credits_label, &get_cookin, &quit, &credits, &settings, &cBackButton]() {
+        QObject::connect(&cBackButton, &QPushButton::clicked, [&label, &credits_label, &get_cookin, &quit, &credits, &myFavourites, &cBackButton]() {
             credits_label.hide();
             label.show();
             get_cookin.show();
             quit.show();
             credits.show();
-            settings.show();
+            myFavourites.show();
             cBackButton.hide();
+        });
+    });
+
+    QObject::connect(&myFavourites, &QPushButton::clicked, [&myFavourites_label, &get_cookin, &quit, &credits, &myFavourites, &label, &mfBackButton]() {
+        myFavourites_label.show();
+        get_cookin.hide();
+        quit.hide();
+        credits.hide();
+        myFavourites.hide();
+
+        QVBoxLayout* layout = new QVBoxLayout(&myFavourites_label);
+        QLabel* textLabel = new QLabel("My Favourites!", &myFavourites_label);
+        textLabel->setWordWrap(true);
+        textLabel->setAlignment(Qt::AlignTop | Qt::AlignHCenter);
+        layout->addWidget(textLabel);
+        QFont font("Tahoma", 26);
+        textLabel->setFont(font);
+
+        textLabel->show();
+
+
+        mfBackButton.show();
+        mfBackButton.raise();
+
+        QObject::connect(&mfBackButton, &QPushButton::clicked, [&label, &myFavourites_label, &get_cookin, &quit, &credits, &myFavourites, &mfBackButton]() {
+            myFavourites_label.hide();
+            label.show();
+            get_cookin.show();
+            quit.show();
+            credits.show();
+            myFavourites.show();
+            mfBackButton.hide();
         });
     });
 
