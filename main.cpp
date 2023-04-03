@@ -11,6 +11,7 @@
 #include <QObject>
 #include <QTextEdit>
 #include <QSlider>
+#include <QCheckBox>
 #include <QWidget>
 
 int main(int argc, char *argv[])
@@ -228,6 +229,11 @@ int main(int argc, char *argv[])
     pancakesTextEdit->hide();
     pancakesLabel.setPixmap(pancakesPixmap);
     pancakesLabel.hide();
+    QCheckBox pancakesCheckBox;
+    pancakesCheckBox.setText("Add to My Favourites");
+    pancakesCheckBox.setParent(&pancakesLabel);
+    pancakesCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    pancakesCheckBox.move(50, 435);
 
     QLabel overnightOatsLabel(&get_cookin_label);
     QPixmap overnightOatsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -1515,12 +1521,13 @@ int main(int argc, char *argv[])
 
 
 
-    QObject::connect(pancakesRecipe, &QAction::triggered, [&pancakesLabel, &pancakesTextEdit, &pancakesPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &pancakesBackButton](){
+    QObject::connect(pancakesRecipe, &QAction::triggered, [&pancakesLabel, &pancakesTextEdit, &pancakesCheckBox, &pancakesPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &pancakesBackButton](){
         breakfastDishesLabel.hide();
         pancakesLabel.show();
         bdBackButton.hide();
         pancakesBackButton.show();
         pancakesTextEdit->show();
+        pancakesCheckBox.show();
     });
     QObject::connect(overnightOatsRecipe, &QAction::triggered, [&overnightOatsLabel, &overnightOatsTextEdit, &overnightOatsPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &overnightOatsBackButton](){
         breakfastDishesLabel.hide();
@@ -2728,6 +2735,10 @@ int main(int argc, char *argv[])
     favicon.setWindowTitle("Recipe Rendezvous");
     favicon.show();
 
+    QMenu myFavouritesMenu("My Favourites", &myFavourites);
+    QMenu seeMyFavourites("Click to see myFavourites", &myFavourites);
+    seeMyFavourites.addMenu(&myFavouritesMenu);
+
     QObject::connect(&get_cookin, &QPushButton::clicked, [&get_cookin_label, &get_cookin, &quit, &credits, &myFavourites, &label, &gcBackButton, &seeCategories]() {
         gcBackButton.hide();
         get_cookin_label.show();
@@ -2785,7 +2796,7 @@ int main(int argc, char *argv[])
         });
     });
 
-    QObject::connect(&myFavourites, &QPushButton::clicked, [&myFavourites_label, &get_cookin, &quit, &credits, &myFavourites, &label, &mfBackButton]() {
+    QObject::connect(&myFavourites, &QPushButton::clicked, [&myFavourites_label, &seeMyFavourites, &get_cookin, &quit, &credits, &myFavourites, &label, &mfBackButton]() {
         myFavourites_label.show();
         get_cookin.hide();
         quit.hide();
@@ -2805,6 +2816,8 @@ int main(int argc, char *argv[])
 
         mfBackButton.show();
         mfBackButton.raise();
+
+        seeMyFavourites.exec(myFavourites.mapToGlobal(QPoint(-20, -200)));
 
         QObject::connect(&mfBackButton, &QPushButton::clicked, [&label, &myFavourites_label, &get_cookin, &quit, &credits, &myFavourites, &mfBackButton]() {
             myFavourites_label.hide();
