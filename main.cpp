@@ -14,6 +14,7 @@
 #include <QCheckBox>
 #include <QWidget>
 
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -230,7 +231,7 @@ int main(int argc, char *argv[])
     pancakesLabel.setPixmap(pancakesPixmap);
     pancakesLabel.hide();
     QCheckBox pancakesCheckBox;
-    pancakesCheckBox.setText("Add to My Favourites");
+    pancakesCheckBox.setText("Did you enjoy this recipe?");
     pancakesCheckBox.setParent(&pancakesLabel);
     pancakesCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
     pancakesCheckBox.move(50, 435);
@@ -243,6 +244,11 @@ int main(int argc, char *argv[])
     overnightOatsTextEdit->hide();
     overnightOatsLabel.setPixmap(overnightOatsPixmap);
     overnightOatsLabel.hide();
+    QCheckBox ooCheckBox;
+    ooCheckBox.setText("Did you enjoy this recipe?");
+    ooCheckBox.setParent(&pancakesLabel);
+    ooCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    ooCheckBox.move(50, 435);
 
     QLabel yoghurtParfaitLabel(&get_cookin_label);
     QPixmap yoghurtParfaitPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -252,6 +258,11 @@ int main(int argc, char *argv[])
     yoghurtParfaitTextEdit->hide();
     yoghurtParfaitLabel.setPixmap(yoghurtParfaitPixmap);
     yoghurtParfaitLabel.hide();
+    QCheckBox ypCheckBox;
+    ypCheckBox.setText("Did you enjoy this recipe?");
+    ypCheckBox.setParent(&pancakesLabel);
+    ypCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    ypCheckBox.move(50, 435);
 
     QLabel avacadoToastLabel(&get_cookin_label);
     QPixmap avacadoToastPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -261,6 +272,11 @@ int main(int argc, char *argv[])
     avacadoToastTextEdit->hide();
     avacadoToastLabel.setPixmap(avacadoToastPixmap);
     avacadoToastLabel.hide();
+    QCheckBox atCheckBox;
+    atCheckBox.setText("Did you enjoy this recipe?");
+    atCheckBox.setParent(&pancakesLabel);
+    atCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    atCheckBox.move(50, 435);
 
     QLabel breakfastBurritoLabel(&get_cookin_label);
     QPixmap breakfastBurritoPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -270,6 +286,11 @@ int main(int argc, char *argv[])
     breakfastBurritoTextEdit->hide();
     breakfastBurritoLabel.setPixmap(breakfastBurritoPixmap);
     breakfastBurritoLabel.hide();
+    QCheckBox bbCheckBox;
+    bbCheckBox.setText("Did you enjoy this recipe?");
+    bbCheckBox.setParent(&pancakesLabel);
+    bbCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    bbCheckBox.move(50, 435);
 
     QLabel shakshukaLabel(&get_cookin_label);
     QPixmap shakshukaPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -279,6 +300,11 @@ int main(int argc, char *argv[])
     shakshukaTextEdit->hide();
     shakshukaLabel.setPixmap(shakshukaPixmap);
     shakshukaLabel.hide();
+    QCheckBox sCheckBox;
+    sCheckBox.setText("Did you enjoy this recipe?");
+    sCheckBox.setParent(&pancakesLabel);
+    sCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    sCheckBox.move(50, 435);
 
     QLabel huevosRancherosLabel(&get_cookin_label);
     QPixmap huevosRancherosPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -288,6 +314,11 @@ int main(int argc, char *argv[])
     huevosRancherosTextEdit->hide();
     huevosRancherosLabel.setPixmap(huevosRancherosPixmap);
     huevosRancherosLabel.hide();
+    QCheckBox hrCheckBox;
+    hrCheckBox.setText("Did you enjoy this recipe?");
+    hrCheckBox.setParent(&pancakesLabel);
+    hrCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    hrCheckBox.move(50, 435);
 
     QLabel croissantBreakfastSandwichLabel(&get_cookin_label);
     QPixmap croissantBreakfastSandwichPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -297,6 +328,11 @@ int main(int argc, char *argv[])
     croissantBreakfastSandwichTextEdit->hide();
     croissantBreakfastSandwichLabel.setPixmap(croissantBreakfastSandwichPixmap);
     croissantBreakfastSandwichLabel.hide();
+    QCheckBox cbsCheckBox;
+    cbsCheckBox.setText("Did you enjoy this recipe?");
+    cbsCheckBox.setParent(&pancakesLabel);
+    cbsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cbsCheckBox.move(50, 435);
 
     QLabel eggsBenedictLabel(&get_cookin_label);
     QPixmap eggsBenedictPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -306,6 +342,11 @@ int main(int argc, char *argv[])
     eggsBenedictTextEdit->hide();
     eggsBenedictLabel.setPixmap(eggsBenedictPixmap);
     eggsBenedictLabel.hide();
+    QCheckBox eblCheckBox;
+    eblCheckBox.setText("Did you enjoy this recipe?");
+    eblCheckBox.setParent(&pancakesLabel);
+    eblCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    eblCheckBox.move(50, 435);
 
     QLabel belgianWafflesLabel(&get_cookin_label);
     QPixmap belgianWafflesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\breakfast_dishes.png");
@@ -315,6 +356,11 @@ int main(int argc, char *argv[])
     belgianWafflesTextEdit->hide();
     belgianWafflesLabel.setPixmap(belgianWafflesPixmap);
     belgianWafflesLabel.hide();
+    QCheckBox bwCheckBox;
+    bwCheckBox.setText("Did you enjoy this recipe?");
+    bwCheckBox.setParent(&pancakesLabel);
+    bwCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    bwCheckBox.move(50, 435);
 
     QLabel classicGuacamoleLabel(&get_cookin_label);
     QPixmap classicGuacamolePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -324,6 +370,11 @@ int main(int argc, char *argv[])
     classicGuacamoleTextEdit->hide();
     classicGuacamoleLabel.setPixmap(classicGuacamolePixmap);
     classicGuacamoleLabel.hide();
+    QCheckBox cgCheckBox;
+    cgCheckBox.setText("Did you enjoy this recipe?");
+    cgCheckBox.setParent(&pancakesLabel);
+    cgCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cgCheckBox.move(50, 435);
 
     QLabel bakedSweetPotatoFriesLabel(&get_cookin_label);
     QPixmap bakedSweetPotatoFriesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -333,6 +384,11 @@ int main(int argc, char *argv[])
     bakedSweetPotatoFriesTextEdit->hide();
     bakedSweetPotatoFriesLabel.setPixmap(bakedSweetPotatoFriesPixmap);
     bakedSweetPotatoFriesLabel.hide();
+    QCheckBox bspfCheckBox;
+    bspfCheckBox.setText("Did you enjoy this recipe?");
+    bspfCheckBox.setParent(&pancakesLabel);
+    bspfCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    bspfCheckBox.move(50, 435);
 
     QLabel capreseSkewersLabel(&get_cookin_label);
     QPixmap capreseSkewersPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -342,6 +398,11 @@ int main(int argc, char *argv[])
     capreseSkewersTextEdit->hide();
     capreseSkewersLabel.setPixmap(capreseSkewersPixmap);
     capreseSkewersLabel.hide();
+    QCheckBox csCheckBox;
+    csCheckBox.setText("Did you enjoy this recipe?");
+    csCheckBox.setParent(&pancakesLabel);
+    csCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    csCheckBox.move(50, 435);
 
     QLabel crispyParmesanZucchiniFriesLabel(&get_cookin_label);
     QPixmap crispyParmesanZucchiniFriesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -351,6 +412,11 @@ int main(int argc, char *argv[])
     crispyParmesanZucchiniFriesTextEdit->hide();
     crispyParmesanZucchiniFriesLabel.setPixmap(capreseSkewersPixmap);
     crispyParmesanZucchiniFriesLabel.hide();
+    QCheckBox cpzfCheckBox;
+    cpzfCheckBox.setText("Did you enjoy this recipe?");
+    cpzfCheckBox.setParent(&pancakesLabel);
+    cpzfCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cpzfCheckBox.move(50, 435);
 
     QLabel spinachAndArtichokeDipLabel(&get_cookin_label);
     QPixmap spinachAndArtichokeDipPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -360,6 +426,11 @@ int main(int argc, char *argv[])
     spinachAndArtichokeDipTextEdit->hide();
     spinachAndArtichokeDipLabel.setPixmap(spinachAndArtichokeDipPixmap);
     spinachAndArtichokeDipLabel.hide();
+    QCheckBox saadCheckBox;
+    saadCheckBox.setText("Did you enjoy this recipe?");
+    saadCheckBox.setParent(&pancakesLabel);
+    saadCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    saadCheckBox.move(50, 435);
 
     QLabel miniQuichesLabel(&get_cookin_label);
     QPixmap miniQuichesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -369,6 +440,11 @@ int main(int argc, char *argv[])
     miniQuichesTextEdit->hide();
     miniQuichesLabel.setPixmap(miniQuichesPixmap);
     miniQuichesLabel.hide();
+    QCheckBox mqCheckBox;
+    mqCheckBox.setText("Did you enjoy this recipe?");
+    mqCheckBox.setParent(&pancakesLabel);
+    mqCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    mqCheckBox.move(50, 435);
 
     QLabel buffaloChickenMeatballsLabel(&get_cookin_label);
     QPixmap buffaloChickenMeatballsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -378,6 +454,11 @@ int main(int argc, char *argv[])
     buffaloChickenMeatballsTextEdit->hide();
     buffaloChickenMeatballsLabel.setPixmap(buffaloChickenMeatballsPixmap);
     buffaloChickenMeatballsLabel.hide();
+    QCheckBox bcmCheckBox;
+    bcmCheckBox.setText("Did you enjoy this recipe?");
+    bcmCheckBox.setParent(&pancakesLabel);
+    bcmCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    bcmCheckBox.move(50, 435);
 
     QLabel grilledShrimpLabel(&get_cookin_label);
     QPixmap grilledShrimpPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -387,6 +468,11 @@ int main(int argc, char *argv[])
     grilledShrimpTextEdit->hide();
     grilledShrimpLabel.setPixmap(grilledShrimpPixmap);
     grilledShrimpLabel.hide();
+    QCheckBox gsCheckBox;
+    gsCheckBox.setText("Did you enjoy this recipe?");
+    gsCheckBox.setParent(&pancakesLabel);
+    gsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    gsCheckBox.move(50, 435);
 
     QLabel sausageRollsLabel(&get_cookin_label);
     QPixmap sausageRollsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -396,6 +482,11 @@ int main(int argc, char *argv[])
     sausageRollsTextEdit->hide();
     sausageRollsLabel.setPixmap(sausageRollsPixmap);
     sausageRollsLabel.hide();
+    QCheckBox srCheckBox;
+    srCheckBox.setText("Did you enjoy this recipe?");
+    srCheckBox.setParent(&pancakesLabel);
+    srCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    srCheckBox.move(50, 435);
 
     QLabel lobsterBisqueLabel(&get_cookin_label);
     QPixmap lobsterBisquePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\appetizers_and_snacks.png");
@@ -405,6 +496,11 @@ int main(int argc, char *argv[])
     lobsterBisqueTextEdit->hide();
     lobsterBisqueLabel.setPixmap(lobsterBisquePixmap);
     lobsterBisqueLabel.hide();
+    QCheckBox lbCheckBox;
+    lbCheckBox.setText("Did you enjoy this recipe?");
+    lbCheckBox.setParent(&pancakesLabel);
+    lbCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    lbCheckBox.move(50, 435);
 
     QLabel tomatoBasilSoupLabel(&get_cookin_label);
     QPixmap tomatoBasilSoupPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -414,6 +510,11 @@ int main(int argc, char *argv[])
     tomatoBasilSoupTextEdit->hide();
     tomatoBasilSoupLabel.setPixmap(tomatoBasilSoupPixmap);
     tomatoBasilSoupLabel.hide();
+    QCheckBox tbsCheckBox;
+    tbsCheckBox.setText("Did you enjoy this recipe?");
+    tbsCheckBox.setParent(&pancakesLabel);
+    tbsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    tbsCheckBox.move(50, 435);
 
     QLabel lentilSoupLabel(&get_cookin_label);
     QPixmap lentilSoupPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -423,6 +524,11 @@ int main(int argc, char *argv[])
     lentilSoupTextEdit->hide();
     lentilSoupLabel.setPixmap(lentilSoupPixmap);
     lentilSoupLabel.hide();
+    QCheckBox lsCheckBox;
+    lsCheckBox.setText("Did you enjoy this recipe?");
+    lsCheckBox.setParent(&pancakesLabel);
+    lsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    lsCheckBox.move(50, 435);
 
     QLabel chickenNoodleSoupLabel(&get_cookin_label);
     QPixmap chickenNoodleSoupPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -432,6 +538,11 @@ int main(int argc, char *argv[])
     chickenNoodleSoupTextEdit->hide();
     chickenNoodleSoupLabel.setPixmap(chickenNoodleSoupPixmap);
     chickenNoodleSoupLabel.hide();
+    QCheckBox cnsCheckBox;
+    cnsCheckBox.setText("Did you enjoy this recipe?");
+    cnsCheckBox.setParent(&pancakesLabel);
+    cnsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cnsCheckBox.move(50, 435);
 
     QLabel beefStewLabel(&get_cookin_label);
     QPixmap beefStewPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -441,6 +552,11 @@ int main(int argc, char *argv[])
     beefStewTextEdit->hide();
     beefStewLabel.setPixmap(beefStewPixmap);
     beefStewLabel.hide();
+    QCheckBox bsCheckBox;
+    bsCheckBox.setText("Did you enjoy this recipe?");
+    bsCheckBox.setParent(&pancakesLabel);
+    bsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    bsCheckBox.move(50, 435);
 
     QLabel butternutSquashSoupLabel(&get_cookin_label);
     QPixmap butternutSquashSoupPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -450,6 +566,11 @@ int main(int argc, char *argv[])
     butternutSquashSoupTextEdit->hide();
     butternutSquashSoupLabel.setPixmap(butternutSquashSoupPixmap);
     butternutSquashSoupLabel.hide();
+    QCheckBox bssCheckBox;
+    bssCheckBox.setText("Did you enjoy this recipe?");
+    bssCheckBox.setParent(&pancakesLabel);
+    bssCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    bssCheckBox.move(50, 435);
 
     QLabel sausageAndKaleSoupLabel(&get_cookin_label);
     QPixmap sausageAndKaleSoupPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -459,6 +580,11 @@ int main(int argc, char *argv[])
     sausageAndKaleSoupTextEdit->hide();
     sausageAndKaleSoupLabel.setPixmap(sausageAndKaleSoupPixmap);
     sausageAndKaleSoupLabel.hide();
+    QCheckBox saksCheckBox;
+    saksCheckBox.setText("Did you enjoy this recipe?");
+    saksCheckBox.setParent(&pancakesLabel);
+    saksCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    saksCheckBox.move(50, 435);
 
     QLabel creamyMushroomSoupLabel(&get_cookin_label);
     QPixmap creamyMushroomSoupPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -468,6 +594,11 @@ int main(int argc, char *argv[])
     creamyMushroomSoupTextEdit->hide();
     creamyMushroomSoupLabel.setPixmap(creamyMushroomSoupPixmap);
     creamyMushroomSoupLabel.hide();
+    QCheckBox cmsCheckBox;
+    cmsCheckBox.setText("Did you enjoy this recipe?");
+    cmsCheckBox.setParent(&pancakesLabel);
+    cmsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cmsCheckBox.move(50, 435);
 
     QLabel frenchOnionSoupLabel(&get_cookin_label);
     QPixmap frenchOnionSoupPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -477,6 +608,11 @@ int main(int argc, char *argv[])
     frenchOnionSoupTextEdit->hide();
     frenchOnionSoupLabel.setPixmap(frenchOnionSoupPixmap);
     frenchOnionSoupLabel.hide();
+    QCheckBox fosCheckBox;
+    fosCheckBox.setText("Did you enjoy this recipe?");
+    fosCheckBox.setParent(&pancakesLabel);
+    fosCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    fosCheckBox.move(50, 435);
 
     QLabel seafoodChowderLabel(&get_cookin_label);
     QPixmap seafoodChowderPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -486,6 +622,11 @@ int main(int argc, char *argv[])
     seafoodChowderTextEdit->hide();
     seafoodChowderLabel.setPixmap(frenchOnionSoupPixmap);
     seafoodChowderLabel.hide();
+    QCheckBox sfcCheckBox;
+    sfcCheckBox.setText("Did you enjoy this recipe?");
+    sfcCheckBox.setParent(&pancakesLabel);
+    sfcCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    sfcCheckBox.move(50, 435);
 
     QLabel beefBourguignonLabel(&get_cookin_label);
     QPixmap beefBourguignonPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\soups_and_stews.png");
@@ -495,6 +636,11 @@ int main(int argc, char *argv[])
     beefBourguignonTextEdit->hide();
     beefBourguignonLabel.setPixmap(beefBourguignonPixmap);
     beefBourguignonLabel.hide();
+    QCheckBox beebCheckBox;
+    beebCheckBox.setText("Did you enjoy this recipe?");
+    beebCheckBox.setParent(&pancakesLabel);
+    beebCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    beebCheckBox.move(50, 435);
 
     QLabel caesarSaladLabel(&get_cookin_label);
     QPixmap caesarSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -504,6 +650,11 @@ int main(int argc, char *argv[])
     caesarSaladTextEdit->hide();
     caesarSaladLabel.setPixmap(caesarSaladPixmap);
     caesarSaladLabel.hide();
+    QCheckBox caesCheckBox;
+    caesCheckBox.setText("Did you enjoy this recipe?");
+    caesCheckBox.setParent(&pancakesLabel);
+    caesCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    caesCheckBox.move(50, 435);
 
     QLabel greekSaladLabel(&get_cookin_label);
     QPixmap greekSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -513,6 +664,11 @@ int main(int argc, char *argv[])
     greekSaladTextEdit->hide();
     greekSaladLabel.setPixmap(greekSaladPixmap);
     greekSaladLabel.hide();
+    QCheckBox grsCheckBox;
+    grsCheckBox.setText("Did you enjoy this recipe?");
+    grsCheckBox.setParent(&pancakesLabel);
+    grsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    grsCheckBox.move(50, 435);
 
     QLabel capreseSaladLabel(&get_cookin_label);
     QPixmap capreseSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -522,6 +678,11 @@ int main(int argc, char *argv[])
     capreseSaladTextEdit->hide();
     capreseSaladLabel.setPixmap(capreseSaladPixmap);
     capreseSaladLabel.hide();
+    QCheckBox capsCheckBox;
+    capsCheckBox.setText("Did you enjoy this recipe?");
+    capsCheckBox.setParent(&pancakesLabel);
+    capsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    capsCheckBox.move(50, 435);
 
     QLabel spinachSaladLabel(&get_cookin_label);
     QPixmap spinachSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -531,6 +692,11 @@ int main(int argc, char *argv[])
     spinachSaladTextEdit->hide();
     spinachSaladLabel.setPixmap(spinachSaladPixmap);
     spinachSaladLabel.hide();
+    QCheckBox ssCheckBox;
+    ssCheckBox.setText("Did you enjoy this recipe?");
+    ssCheckBox.setParent(&pancakesLabel);
+    ssCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    ssCheckBox.move(50, 435);
 
     QLabel cobbSaladLabel(&get_cookin_label);
     QPixmap cobbSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -540,6 +706,11 @@ int main(int argc, char *argv[])
     cobbSaladTextEdit->hide();
     cobbSaladLabel.setPixmap(cobbSaladPixmap);
     cobbSaladLabel.hide();
+    QCheckBox cobsCheckBox;
+    cobsCheckBox.setText("Did you enjoy this recipe?");
+    cobsCheckBox.setParent(&pancakesLabel);
+    cobsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cobsCheckBox.move(50, 435);
 
     QLabel quinoaSaladLabel(&get_cookin_label);
     QPixmap quinoaSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -549,6 +720,11 @@ int main(int argc, char *argv[])
     quinoaSaladTextEdit->hide();
     quinoaSaladLabel.setPixmap(quinoaSaladPixmap);
     quinoaSaladLabel.hide();
+    QCheckBox qsCheckBox;
+    qsCheckBox.setText("Did you enjoy this recipe?");
+    qsCheckBox.setParent(&pancakesLabel);
+    qsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    qsCheckBox.move(50, 435);
 
     QLabel grilledChickenSaladLabel(&get_cookin_label);
     QPixmap grilledChickenSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -558,6 +734,11 @@ int main(int argc, char *argv[])
     grilledChickenSaladTextEdit->hide();
     grilledChickenSaladLabel.setPixmap(grilledChickenSaladPixmap);
     grilledChickenSaladLabel.hide();
+    QCheckBox gcsCheckBox;
+    gcsCheckBox.setText("Did you enjoy this recipe?");
+    gcsCheckBox.setParent(&pancakesLabel);
+    gcsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    gcsCheckBox.move(50, 435);
 
     QLabel thaiBeefSaladLabel(&get_cookin_label);
     QPixmap thaiBeefSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -567,6 +748,11 @@ int main(int argc, char *argv[])
     thaiBeefSaladTextEdit->hide();
     thaiBeefSaladLabel.setPixmap(thaiBeefSaladPixmap);
     thaiBeefSaladLabel.hide();
+    QCheckBox thbsCheckBox;
+    thbsCheckBox.setText("Did you enjoy this recipe?");
+    thbsCheckBox.setParent(&pancakesLabel);
+    thbsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    thbsCheckBox.move(50, 435);
 
     QLabel grilledPeachSaladLabel(&get_cookin_label);
     QPixmap grilledPeachSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -576,6 +762,11 @@ int main(int argc, char *argv[])
     grilledPeachSaladTextEdit->hide();
     grilledPeachSaladLabel.setPixmap(grilledPeachSaladPixmap);
     grilledPeachSaladLabel.hide();
+    QCheckBox gpsCheckBox;
+    gpsCheckBox.setText("Did you enjoy this recipe?");
+    gpsCheckBox.setParent(&pancakesLabel);
+    gpsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    gpsCheckBox.move(50, 435);
 
     QLabel goatCheeseSaladLabel(&get_cookin_label);
     QPixmap goatCheeseSaladPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\salads.png");
@@ -585,6 +776,11 @@ int main(int argc, char *argv[])
     goatCheeseSaladTextEdit->hide();
     goatCheeseSaladLabel.setPixmap(goatCheeseSaladPixmap);
     goatCheeseSaladLabel.hide();
+    QCheckBox goatcsCheckBox;
+    goatcsCheckBox.setText("Did you enjoy this recipe?");
+    goatcsCheckBox.setParent(&pancakesLabel);
+    goatcsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    goatcsCheckBox.move(50, 435);
 
     QLabel lentilChiliLabel(&get_cookin_label);
     QPixmap lentilChiliPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\vegetarian.png");
@@ -594,6 +790,11 @@ int main(int argc, char *argv[])
     lentilChiliTextEdit->hide();
     lentilChiliLabel.setPixmap(lentilChiliPixmap);
     lentilChiliLabel.hide();
+    QCheckBox lcCheckBox;
+    lcCheckBox.setText("Did you enjoy this recipe?");
+    lcCheckBox.setParent(&pancakesLabel);
+    lcCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    lcCheckBox.move(50, 435);
 
     QLabel stirFryLabel(&get_cookin_label);
     QPixmap stirFryPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\vegetarian.png");
@@ -603,6 +804,11 @@ int main(int argc, char *argv[])
     stirFryTextEdit->hide();
     stirFryLabel.setPixmap(stirFryPixmap);
     stirFryLabel.hide();
+    QCheckBox sfCheckBox;
+    sfCheckBox.setText("Did you enjoy this recipe?");
+    sfCheckBox.setParent(&pancakesLabel);
+    sfCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    sfCheckBox.move(50, 435);
 
     QLabel friedRiceLabel(&get_cookin_label);
     QPixmap friedRicePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\vegetarian.png");
@@ -612,6 +818,11 @@ int main(int argc, char *argv[])
     friedRiceTextEdit->hide();
     friedRiceLabel.setPixmap(friedRicePixmap);
     friedRiceLabel.hide();
+    QCheckBox frCheckBox;
+    frCheckBox.setText("Did you enjoy this recipe?");
+    frCheckBox.setParent(&pancakesLabel);
+    frCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    frCheckBox.move(50, 435);
 
     QLabel shepherdsPieLabel(&get_cookin_label);
     QPixmap shepherdsPiePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\vegetarian.png");
@@ -621,6 +832,11 @@ int main(int argc, char *argv[])
     shepherdsPieTextEdit->hide();
     shepherdsPieLabel.setPixmap(shepherdsPiePixmap);
     shepherdsPieLabel.hide();
+    QCheckBox spCheckBox;
+    spCheckBox.setText("Did you enjoy this recipe?");
+    spCheckBox.setParent(&pancakesLabel);
+    spCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    spCheckBox.move(50, 435);
 
     QLabel vegetableLasagnaLabel(&get_cookin_label);
     QPixmap vegetableLasagnaPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\vegetarian.png");
@@ -630,6 +846,11 @@ int main(int argc, char *argv[])
     vegetableLasagnaTextEdit->hide();
     vegetableLasagnaLabel.setPixmap(vegetableLasagnaPixmap);
     vegetableLasagnaLabel.hide();
+    QCheckBox vlCheckBox;
+    vlCheckBox.setText("Did you enjoy this recipe?");
+    vlCheckBox.setParent(&pancakesLabel);
+    vlCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    vlCheckBox.move(50, 435);
 
     QLabel panSearedSalmonLabel(&get_cookin_label);
     QPixmap panSearedSalmonPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\seafood_dishes.png");
@@ -639,6 +860,11 @@ int main(int argc, char *argv[])
     panSearedSalmonTextEdit->hide();
     panSearedSalmonLabel.setPixmap(panSearedSalmonPixmap);
     panSearedSalmonLabel.hide();
+    QCheckBox pssCheckBox;
+    pssCheckBox.setText("Did you enjoy this recipe?");
+    pssCheckBox.setParent(&pancakesLabel);
+    pssCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    pssCheckBox.move(50, 435);
 
     QLabel shrimpScampiLabel(&get_cookin_label);
     QPixmap shrimpScampiPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\seafood_dishes.png");
@@ -648,6 +874,11 @@ int main(int argc, char *argv[])
     shrimpScampiTextEdit->hide();
     shrimpScampiLabel.setPixmap(shrimpScampiPixmap);
     shrimpScampiLabel.hide();
+    QCheckBox shsCheckBox;
+    shsCheckBox.setText("Did you enjoy this recipe?");
+    shsCheckBox.setParent(&pancakesLabel);
+    shsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    shsCheckBox.move(50, 435);
 
     QLabel lobsterTailsLabel(&get_cookin_label);
     QPixmap lobsterTailsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\seafood_dishes.png");
@@ -657,6 +888,11 @@ int main(int argc, char *argv[])
     lobsterTailsTextEdit->hide();
     lobsterTailsLabel.setPixmap(lobsterTailsPixmap);
     lobsterTailsLabel.hide();
+    QCheckBox lobsCheckBox;
+    lobsCheckBox.setText("Did you enjoy this recipe?");
+    lobsCheckBox.setParent(&pancakesLabel);
+    lobsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    lobsCheckBox.move(50, 435);
 
     QLabel cioppinoLabel(&get_cookin_label);
     QPixmap cioppinoPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\seafood_dishes.png");
@@ -666,6 +902,11 @@ int main(int argc, char *argv[])
     cioppinoTextEdit->hide();
     cioppinoLabel.setPixmap(cioppinoPixmap);
     cioppinoLabel.hide();
+    QCheckBox ciopCheckBox;
+    ciopCheckBox.setText("Did you enjoy this recipe?");
+    ciopCheckBox.setParent(&pancakesLabel);
+    ciopCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    ciopCheckBox.move(50, 435);
 
     QLabel mahiMahiLabel(&get_cookin_label);
     QPixmap mahiMahiPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\seafood_dishes.png");
@@ -675,6 +916,11 @@ int main(int argc, char *argv[])
     mahiMahiTextEdit->hide();
     mahiMahiLabel.setPixmap(mahiMahiPixmap);
     mahiMahiLabel.hide();
+    QCheckBox mahiCheckBox;
+    mahiCheckBox.setText("Did you enjoy this recipe?");
+    mahiCheckBox.setParent(&pancakesLabel);
+    mahiCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    mahiCheckBox.move(50, 435);
 
     QLabel chickenPiccataLabel(&get_cookin_label);
     QPixmap chickenPiccataPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\poultry_dishes.png");
@@ -684,6 +930,11 @@ int main(int argc, char *argv[])
     chickenPiccataTextEdit->hide();
     chickenPiccataLabel.setPixmap(chickenPiccataPixmap);
     chickenPiccataLabel.hide();
+    QCheckBox cpiccCheckBox;
+    cpiccCheckBox.setText("Did you enjoy this recipe?");
+    cpiccCheckBox.setParent(&pancakesLabel);
+    cpiccCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cpiccCheckBox.move(50, 435);
 
     QLabel chickenAndDumplingsLabel(&get_cookin_label);
     QPixmap chickenAndDumplingsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\poultry_dishes.png");
@@ -693,6 +944,11 @@ int main(int argc, char *argv[])
     chickenAndDumplingsTextEdit->hide();
     chickenAndDumplingsLabel.setPixmap(chickenAndDumplingsPixmap);
     chickenAndDumplingsLabel.hide();
+    QCheckBox cadCheckBox;
+    cadCheckBox.setText("Did you enjoy this recipe?");
+    cadCheckBox.setParent(&pancakesLabel);
+    cadCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cadCheckBox.move(50, 435);
 
     QLabel turkeyBurgersLabel(&get_cookin_label);
     QPixmap turkeyBurgersPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\poultry_dishes.png");
@@ -702,6 +958,11 @@ int main(int argc, char *argv[])
     turkeyBurgersTextEdit->hide();
     turkeyBurgersLabel.setPixmap(turkeyBurgersPixmap);
     turkeyBurgersLabel.hide();
+    QCheckBox tbCheckBox;
+    tbCheckBox.setText("Did you enjoy this recipe?");
+    tbCheckBox.setParent(&pancakesLabel);
+    tbCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    tbCheckBox.move(50, 435);
 
     QLabel roastChickenLabel(&get_cookin_label);
     QPixmap roastChickenPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\poultry_dishes.png");
@@ -711,6 +972,11 @@ int main(int argc, char *argv[])
     roastChickenTextEdit->hide();
     roastChickenLabel.setPixmap(roastChickenPixmap);
     roastChickenLabel.hide();
+    QCheckBox rcCheckBox;
+    rcCheckBox.setText("Did you enjoy this recipe?");
+    rcCheckBox.setParent(&pancakesLabel);
+    rcCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    rcCheckBox.move(50, 435);
 
     QLabel marsalaLabel(&get_cookin_label);
     QPixmap marsalaPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\poultry_dishes.png");
@@ -720,6 +986,11 @@ int main(int argc, char *argv[])
     marsalaTextEdit->hide();
     marsalaLabel.setPixmap(marsalaPixmap);
     marsalaLabel.hide();
+    QCheckBox marsCheckBox;
+    marsCheckBox.setText("Did you enjoy this recipe?");
+    marsCheckBox.setParent(&pancakesLabel);
+    marsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    marsCheckBox.move(50, 435);
 
     QLabel beefStroganoffLabel(&get_cookin_label);
     QPixmap beefStroganoffPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -729,6 +1000,11 @@ int main(int argc, char *argv[])
     beefStroganoffTextEdit->hide();
     beefStroganoffLabel.setPixmap(beefStroganoffPixmap);
     beefStroganoffLabel.hide();
+    QCheckBox bstrCheckBox;
+    bstrCheckBox.setText("Did you enjoy this recipe?");
+    bstrCheckBox.setParent(&pancakesLabel);
+    bstrCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    bstrCheckBox.move(50, 435);
 
     QLabel lambChopsLabel(&get_cookin_label);
     QPixmap lambChopsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -738,6 +1014,11 @@ int main(int argc, char *argv[])
     lambChopsTextEdit->hide();
     lambChopsLabel.setPixmap(lambChopsPixmap);
     lambChopsLabel.hide();
+    QCheckBox lambcCheckBox;
+    lambcCheckBox.setText("Did you enjoy this recipe?");
+    lambcCheckBox.setParent(&pancakesLabel);
+    lambcCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    lambcCheckBox.move(50, 435);
 
     QLabel italianMeatballsLabel(&get_cookin_label);
     QPixmap italianMeatballsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -747,6 +1028,11 @@ int main(int argc, char *argv[])
     italianMeatballsTextEdit->hide();
     italianMeatballsLabel.setPixmap(italianMeatballsPixmap);
     italianMeatballsLabel.hide();
+    QCheckBox imCheckBox;
+    imCheckBox.setText("Did you enjoy this recipe?");
+    imCheckBox.setParent(&pancakesLabel);
+    imCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    imCheckBox.move(50, 435);
 
     QLabel porkChopsLabel(&get_cookin_label);
     QPixmap porkChopsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -756,6 +1042,11 @@ int main(int argc, char *argv[])
     porkChopsTextEdit->hide();
     porkChopsLabel.setPixmap(porkChopsPixmap);
     porkChopsLabel.hide();
+    QCheckBox pcCheckBox;
+    pcCheckBox.setText("Did you enjoy this recipe?");
+    pcCheckBox.setParent(&pancakesLabel);
+    pcCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    pcCheckBox.move(50, 435);
 
     QLabel koreanBBQLabel(&get_cookin_label);
     QPixmap koreanBBQPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -765,6 +1056,11 @@ int main(int argc, char *argv[])
     koreanBBQTextEdit->hide();
     koreanBBQLabel.setPixmap(koreanBBQPixmap);
     koreanBBQLabel.hide();
+    QCheckBox kbbqCheckBox;
+    kbbqCheckBox.setText("Did you enjoy this recipe?");
+    kbbqCheckBox.setParent(&pancakesLabel);
+    kbbqCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    kbbqCheckBox.move(50, 435);
 
     QLabel spaghettiBologneseLabel(&get_cookin_label);
     QPixmap spaghettiBolognesePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -774,6 +1070,11 @@ int main(int argc, char *argv[])
     spaghettiBologneseTextEdit->hide();
     spaghettiBologneseLabel.setPixmap(spaghettiBolognesePixmap);
     spaghettiBologneseLabel.hide();
+    QCheckBox sbCheckBox;
+    sbCheckBox.setText("Did you enjoy this recipe?");
+    sbCheckBox.setParent(&pancakesLabel);
+    sbCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    sbCheckBox.move(50, 435);
 
     QLabel fettuccineAlfredoLabel(&get_cookin_label);
     QPixmap fettuccineAlfredoPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -783,6 +1084,11 @@ int main(int argc, char *argv[])
     fettuccineAlfredoTextEdit->hide();
     fettuccineAlfredoLabel.setPixmap(fettuccineAlfredoPixmap);
     fettuccineAlfredoLabel.hide();
+    QCheckBox faCheckBox;
+    faCheckBox.setText("Did you enjoy this recipe?");
+    faCheckBox.setParent(&pancakesLabel);
+    faCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    faCheckBox.move(50, 435);
 
     QLabel linguineLabel(&get_cookin_label);
     QPixmap linguinePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -792,6 +1098,11 @@ int main(int argc, char *argv[])
     linguineTextEdit->hide();
     linguineLabel.setPixmap(linguinePixmap);
     linguineLabel.hide();
+    QCheckBox linCheckBox;
+    linCheckBox.setText("Did you enjoy this recipe?");
+    linCheckBox.setParent(&pancakesLabel);
+    linCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    linCheckBox.move(50, 435);
 
     QLabel pestoPastaLabel(&get_cookin_label);
     QPixmap pestoPastaPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -801,6 +1112,11 @@ int main(int argc, char *argv[])
     pestoPastaTextEdit->hide();
     pestoPastaLabel.setPixmap(pestoPastaPixmap);
     pestoPastaLabel.hide();
+    QCheckBox ppCheckBox;
+    ppCheckBox.setText("Did you enjoy this recipe?");
+    ppCheckBox.setParent(&pancakesLabel);
+    ppCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    ppCheckBox.move(50, 435);
 
     QLabel rigatoniLabel(&get_cookin_label);
     QPixmap rigatoniPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\meat_dishes.png");
@@ -810,6 +1126,11 @@ int main(int argc, char *argv[])
     rigatoniTextEdit->hide();
     rigatoniLabel.setPixmap(rigatoniPixmap);
     rigatoniLabel.hide();
+    QCheckBox rCheckBox;
+    rCheckBox.setText("Did you enjoy this recipe?");
+    rCheckBox.setParent(&pancakesLabel);
+    rCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    rCheckBox.move(50, 435);
 
     QLabel chimichurriLabel(&get_cookin_label);
     QPixmap chimichurriPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\sauces_dressings_marinades.png");
@@ -819,6 +1140,11 @@ int main(int argc, char *argv[])
     chimichurriTextEdit->hide();
     chimichurriLabel.setPixmap(chimichurriPixmap);
     chimichurriLabel.hide();
+    QCheckBox chchCheckBox;
+    chchCheckBox.setText("Did you enjoy this recipe?");
+    chchCheckBox.setParent(&pancakesLabel);
+    chchCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    chchCheckBox.move(50, 435);
 
     QLabel honeyMustardDressingLabel(&get_cookin_label);
     QPixmap honeyMustardDressingPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\sauces_dressings_marinades.png");
@@ -828,6 +1154,11 @@ int main(int argc, char *argv[])
     honeyMustardDressingTextEdit->hide();
     honeyMustardDressingLabel.setPixmap(honeyMustardDressingPixmap);
     honeyMustardDressingLabel.hide();
+    QCheckBox hmdCheckBox;
+    hmdCheckBox.setText("Did you enjoy this recipe?");
+    hmdCheckBox.setParent(&pancakesLabel);
+    hmdCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    hmdCheckBox.move(50, 435);
 
     QLabel redWineSauceLabel(&get_cookin_label);
     QPixmap redWineSaucePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\sauces_dressings_marinades.png");
@@ -837,6 +1168,11 @@ int main(int argc, char *argv[])
     redWineSauceTextEdit->hide();
     redWineSauceLabel.setPixmap(redWineSaucePixmap);
     redWineSauceLabel.hide();
+    QCheckBox rwsCheckBox;
+    rwsCheckBox.setText("Did you enjoy this recipe?");
+    rwsCheckBox.setParent(&pancakesLabel);
+    rwsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    rwsCheckBox.move(50, 435);
 
     QLabel thaiPeanutSauceLabel(&get_cookin_label);
     QPixmap thaiPeanutSaucePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\sauces_dressings_marinades.png");
@@ -846,6 +1182,11 @@ int main(int argc, char *argv[])
     thaiPeanutSauceTextEdit->hide();
     thaiPeanutSauceLabel.setPixmap(thaiPeanutSaucePixmap);
     thaiPeanutSauceLabel.hide();
+    QCheckBox tpsCheckBox;
+    tpsCheckBox.setText("Did you enjoy this recipe?");
+    tpsCheckBox.setParent(&pancakesLabel);
+    tpsCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    tpsCheckBox.move(50, 435);
 
     QLabel caesarDressingLabel(&get_cookin_label);
     QPixmap caesarDressingPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\sauces_dressings_marinades.png");
@@ -855,6 +1196,11 @@ int main(int argc, char *argv[])
     caesarDressingTextEdit->hide();
     caesarDressingLabel.setPixmap(caesarDressingPixmap);
     caesarDressingLabel.hide();
+    QCheckBox cdCheckBox;
+    cdCheckBox.setText("Did you enjoy this recipe?");
+    cdCheckBox.setParent(&pancakesLabel);
+    cdCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cdCheckBox.move(50, 435);
 
     QLabel chocolateChipCookiesLabel(&get_cookin_label);
     QPixmap chocolateChipCookiesPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\desserts.png");
@@ -864,6 +1210,11 @@ int main(int argc, char *argv[])
     chocolateChipCookiesTextEdit->hide();
     chocolateChipCookiesLabel.setPixmap(chocolateChipCookiesPixmap);
     chocolateChipCookiesLabel.hide();
+    QCheckBox cccCheckBox;
+    cccCheckBox.setText("Did you enjoy this recipe?");
+    cccCheckBox.setParent(&pancakesLabel);
+    cccCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cccCheckBox.move(50, 435);
 
     QLabel blueberryMuffinsLabel(&get_cookin_label);
     QPixmap blueberryMuffinsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\desserts.png");
@@ -873,6 +1224,11 @@ int main(int argc, char *argv[])
     blueberryMuffinsTextEdit->hide();
     blueberryMuffinsLabel.setPixmap(blueberryMuffinsPixmap);
     blueberryMuffinsLabel.hide();
+    QCheckBox bmCheckBox;
+    bmCheckBox.setText("Did you enjoy this recipe?");
+    bmCheckBox.setParent(&pancakesLabel);
+    bmCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    bmCheckBox.move(50, 435);
 
     QLabel cheesecakeLabel(&get_cookin_label);
     QPixmap cheesecakePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\desserts.png");
@@ -882,6 +1238,11 @@ int main(int argc, char *argv[])
     cheesecakeTextEdit->hide();
     cheesecakeLabel.setPixmap(cheesecakePixmap);
     cheesecakeLabel.hide();
+    QCheckBox cheCheckBox;
+    cheCheckBox.setText("Did you enjoy this recipe?");
+    cheCheckBox.setParent(&pancakesLabel);
+    cheCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    cheCheckBox.move(50, 435);
 
     QLabel applePieLabel(&get_cookin_label);
     QPixmap applePiePixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\desserts.png");
@@ -891,6 +1252,11 @@ int main(int argc, char *argv[])
     applePieTextEdit->hide();
     applePieLabel.setPixmap(applePiePixmap);
     applePieLabel.hide();
+    QCheckBox apCheckBox;
+    apCheckBox.setText("Did you enjoy this recipe?");
+    apCheckBox.setParent(&pancakesLabel);
+    apCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    apCheckBox.move(50, 435);
 
     QLabel lemonBarsLabel(&get_cookin_label);
     QPixmap lemonBarsPixmap("C:\\Users\\fionn\\OneDrive\\Desktop\\CookingAppMarkII\\images\\desserts.png");
@@ -900,6 +1266,11 @@ int main(int argc, char *argv[])
     lemonBarsTextEdit->hide();
     lemonBarsLabel.setPixmap(lemonBarsPixmap);
     lemonBarsLabel.hide();
+    QCheckBox lembCheckBox;
+    lembCheckBox.setText("Did you enjoy this recipe?");
+    lembCheckBox.setParent(&pancakesLabel);
+    lembCheckBox.setStyleSheet("QCheckBox { background-color: red; }");
+    lembCheckBox.move(50, 435);
 
 
 
@@ -1534,7 +1905,6 @@ int main(int argc, char *argv[])
         overnightOatsLabel.show();
         bdBackButton.hide();
         overnightOatsBackButton.show();
-        overnightOatsTextEdit->show();
     });
     QObject::connect(yoghurtParfaitRecipe, &QAction::triggered, [&yoghurtParfaitLabel, &yoghurtParfaitTextEdit, &yoghurtParfaitPixmap, &get_cookin_label, &breakfastDishesLabel, &bdBackButton, &yoghurtParfaitBackButton](){
         breakfastDishesLabel.hide();
@@ -2704,7 +3074,6 @@ int main(int argc, char *argv[])
 
 
 
-
     QFont font("Tahoma", 16, QFont::Bold);
 
     get_cookin.setFont(font);
@@ -2735,9 +3104,18 @@ int main(int argc, char *argv[])
     favicon.setWindowTitle("Recipe Rendezvous");
     favicon.show();
 
-    QMenu myFavouritesMenu("My Favourites", &myFavourites);
-    QMenu seeMyFavourites("Click to see myFavourites", &myFavourites);
-    seeMyFavourites.addMenu(&myFavouritesMenu);
+    QMenu *myFavouritesMenu = new QMenu("My Favourites", &myFavourites);
+    QMenu *seeMyFavouritesMenu = new QMenu("Click to see my Favourites", &myFavourites);
+    seeMyFavouritesMenu->addMenu(myFavouritesMenu);
+
+
+
+
+
+
+
+
+
 
     QObject::connect(&get_cookin, &QPushButton::clicked, [&get_cookin_label, &get_cookin, &quit, &credits, &myFavourites, &label, &gcBackButton, &seeCategories]() {
         gcBackButton.hide();
@@ -2764,7 +3142,7 @@ int main(int argc, char *argv[])
     });
 
 
-    QObject::connect(&credits, &QPushButton::clicked, [&credits_label, &get_cookin, &quit, &credits, &myFavourites, &label, &cBackButton]() {
+    QObject::connect(&credits, &QPushButton::clicked, [&credits_label, &myFavourites_label, &get_cookin, &quit, &credits, &myFavourites, &label, &cBackButton]() {
         credits_label.show();
         get_cookin.hide();
         quit.hide();
@@ -2796,7 +3174,7 @@ int main(int argc, char *argv[])
         });
     });
 
-    QObject::connect(&myFavourites, &QPushButton::clicked, [&myFavourites_label, &seeMyFavourites, &get_cookin, &quit, &credits, &myFavourites, &label, &mfBackButton]() {
+    QObject::connect(&myFavourites, &QPushButton::clicked, [&get_cookin, &myFavourites_label, &quit, &credits, &myFavourites, &label, &mfBackButton]() {
         myFavourites_label.show();
         get_cookin.hide();
         quit.hide();
@@ -2817,7 +3195,7 @@ int main(int argc, char *argv[])
         mfBackButton.show();
         mfBackButton.raise();
 
-        seeMyFavourites.exec(myFavourites.mapToGlobal(QPoint(-20, -200)));
+
 
         QObject::connect(&mfBackButton, &QPushButton::clicked, [&label, &myFavourites_label, &get_cookin, &quit, &credits, &myFavourites, &mfBackButton]() {
             myFavourites_label.hide();
@@ -2835,3 +3213,5 @@ int main(int argc, char *argv[])
 
     return a.exec();
 }
+
+
